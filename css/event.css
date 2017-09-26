@@ -1,0 +1,53 @@
+/* cafe color #ff9794 */
+/* cafe font UtsukushiFONT.otf */
+.sub-nav {
+  margin-bottom: 10px;
+}
+
+.sub-nav label {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#panels .container {
+  box-sizing: border-box;
+  border: 10px solid #f08d24;
+  width: 100%;
+}
+
+#panels section main {
+  box-sizing: border-box;
+  max-height: 0;
+  opacity: 0;
+  -webkit-transition: opacity 600ms;
+  transition: opacity 600ms;
+  overflow-y: hidden;
+}
+
+#panels section main img{
+  width: 100%;
+}
+
+#stage:checked ~ #panels #panel-stage main,
+#cafe:checked ~ #panels #panel-cafe main,
+#ws:checked ~ #panels #panel-ws main,
+#booth:checked ~ #panels #panel-booth main {
+  max-height: initial;
+  opacity: 1;
+}
+
+#stage:checked ~ .sub-nav > #nav-stage,
+#cafe:checked ~ .sub-nav > #nav-cafe,
+#ws:checked ~ .sub-nav > #nav-ws,
+#booth:checked ~ .sub-nav > #nav-booth {
+  background: #f08d24;
+  color: #082936;
+
+  /*border: 4px solid #f08d24;*/
+}
+
+.panel-radios {
+  display: none;
+}
