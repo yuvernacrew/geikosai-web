@@ -4,11 +4,16 @@
   margin-bottom: 10px;
 }
 
+.sub-nav li {
+  padding: 0;
+}
+
 .sub-nav label {
   cursor: pointer;
   display: block;
   width: 100%;
   height: 100%;
+  padding: 8px 0;
 }
 
 #panels .container {
@@ -24,10 +29,6 @@
   -webkit-transition: opacity 600ms;
   transition: opacity 600ms;
   overflow-y: hidden;
-}
-
-#panels section main img{
-  width: 100%;
 }
 
 #stage:checked ~ #panels #panel-stage main,
@@ -50,4 +51,334 @@
 
 .panel-radios {
   display: none;
+}
+
+/*-------------
+  cafe
+------------ */
+
+@font-face {
+  font-family: 'UtsukushiFONT.otf';
+  src: url(../font/UtsukushiFONT.otf);
+}
+
+#panel-cafe{
+  font-family: 'UtsukushiFONT.otf';
+}
+
+
+.text-pink{
+  color: #ff9794;
+}
+
+#panel-cafe main{
+  position: relative;
+  background-image: url("../images/event/cafe-background.png");
+  background-size: cover;
+}
+
+.top-box{
+  position: relative;
+}
+
+.top-box img{
+  display: block;
+  width: 70%;
+  margin: 100px auto;
+}
+
+.line{
+  width: 100%;
+}
+
+.menu-top{
+  position: relative;
+  width: 940px;
+  height: 350px;
+  text-align: center;
+}
+
+.lunch-text{
+  width: 30%;
+  margin-top: 50px;
+}
+
+.lunch-menu{
+  width: 100%;
+  float: left;
+}
+
+.menu-bottom{
+  position: relative;
+  width: 940px;
+  float: left;
+}
+
+.menu-bottom img{
+  position: absolute;
+}
+
+.dessert, .limited-plate{
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 400px;
+}
+
+.dessert-title{
+  width: 30%;
+  left: 80px;
+  top: 20px;
+  z-index: 10;
+}
+
+.dessert1{
+  left: 160px;
+  top: 0px;
+}
+
+.dessert2{
+  left: 280px;
+  top: 150px;
+}
+
+.dessert3{
+  left: 40px;
+  top: 150px;
+}
+
+.limited-text{
+  position: absolute;
+  left: 250px;
+  top: 90px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.limited-img{
+  left: 0px;
+  top: 0px;
+}
+
+.limited-title{
+  width: 46%;
+  left: 210px;
+  top: 30px;
+}
+
+.special-text{
+  position: absolute;
+  left: 50px;
+  top: 300px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.special-img{
+  left: 250px;
+  top: 150px;
+}
+
+.special-title{
+  width: 25%;
+  left: 50px;
+  top: 250px;
+}
+
+.bottom-box{
+  position: relative;
+  width: 940px;
+  height: 400px;
+  text-align: center;
+}
+
+.cafe-hours{
+  width: 30%;
+  margin: 60px 0px;
+}
+
+.cafe-date{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.bottom-text{
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+/*-----------------
+  ws
+-----------------*/
+
+
+
+.ws{
+  display:block;
+  width:100%;
+  height: 570px;
+  padding:75px 60px 30px 60px;
+}
+
+.ws2{
+  height: 520px;
+}
+
+.ws3{
+  height: 600px;
+}
+
+
+.ws h1 {
+  font-family: 'honoka';
+  font-size: 16px;
+  width: 150px;
+  margin: 30px 90px 12px 10px;
+  color:#f08d24;
+  float: left;
+}
+
+.ws2 h1 {
+  font-size: 16px;
+  width: 150px;
+  float: right;
+  margin: 30px 0px 12px 100px;
+  font-family: 'honoka';
+  color:#f08d24;
+}
+
+.ws h2 {
+  width: 90%;
+  font-size: 24px;
+  font-family: 'honoka';
+  background: linear-gradient(transparent 80%, #f08d24 80%);
+  margin: 25px 15px 20px 15px;
+
+}
+
+.ws2-text h2{
+  width: 60%;
+}
+
+.ws3-text h2{
+  width: 80%;
+  margin: 30px 5px 20px 65px;
+}
+
+
+.ws-text{
+  float: left;
+  width: 55%;
+  height: 300px;
+  border: solid 1px #f08d24;
+  margin: 0px 20px 20px 16px;
+  font-family: 'honoka';
+  position: relative;
+  z-index: -1;
+}
+
+.ws2-text{
+  margin: 0px 0px 20px 25px;
+}
+
+.ws3-text{
+  margin: 0px 20px 20px 15px;
+}
+
+.ws-text p {
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  float: left;
+  text-align: right;
+  font-size: 16px;
+  margin: 0px 15px 25px 60px;
+}
+
+.ws2-text p {
+  text-align: left;
+  margin: 15px 15px 25px 20px;
+}
+
+.ws3-text p {
+  text-align: right;
+  margin: 5px 15px 25px 120px;
+}
+
+img.ws1-1{
+  margin: 0 0 0 25px;
+  width: 36%;
+  float: left;
+}
+
+img.ws1-2{
+  float: left;
+  position: absolute;
+  top:90px;
+  right: 340px;
+}
+
+img.ws2-2{
+  float: left;
+  position: absolute;
+  top:70px;
+  left:260px;
+}
+
+img.ws3-1{
+  margin: 0 0 0 8px;
+  float: left;
+}
+
+img.ws3-2{
+  position: absolute;
+  top:90px;
+  right: 340px;
+
+}
+
+.line-height{
+  background-color:#f08d24;
+  width: 1px;
+  height: 80px;
+}
+
+.line-width{
+  background-color:#f08d24;
+  width: 90px;
+  height: 1px;
+}
+
+.ws .line-height{
+  margin: 37px 0 0 0;
+  float: left;
+}
+
+.ws .line-width{
+  margin: 36px 0 0 0px;
+  float: left;
+}
+
+.ws2 .line-height{
+  margin: 37px 10px 0 0;
+  float: right;
+}
+
+.ws2 .line-width{
+  margin: 37px 0 0 0px;
+  float: right;
+}
+
+.ws3 .line-height{
+  margin: 37px 0 0 0;
+  float: left;
+}
+
+.ws3 .line-width{
+  margin: 37px 0 0 0px;
+  float: left;
+}
+
+
+@media (max-width: 750px){
+
 }

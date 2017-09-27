@@ -1,0 +1,26 @@
+.sponser-container {
+  display: flex;
+}
+
+.sponser-container li {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  width: 210px;
+  height: 100px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.sponser-container li img {
+  width: 100%;
+  height: 100%;
+}
+
+.sponser-container li:hover {
+  border: 8px solid #f08d24;
+}
+
+.modal-container {
+  width: 45%;
+}

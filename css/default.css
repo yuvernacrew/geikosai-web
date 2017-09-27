@@ -91,6 +91,12 @@ body {
 }
 
 /* layout */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
 .l-left {
   float: left;
 }
@@ -204,6 +210,7 @@ body {
   background-color: #082936;
   position: fixed;
   top: 40px;
+  z-index: 100;
 }
 
 .logo-container {
@@ -364,7 +371,7 @@ h1, h2 {
 
 h1 img {
   display: block;
-  margin: 10px auto 24px;
+  margin: 10px auto 40px;
   height: 72px;
 }
 
@@ -375,13 +382,11 @@ h2 img {
 }
 
 .sub-nav {
-  display: flex;
   margin-bottom: 48px;
 }
 
 .sub-nav li {
   cursor: pointer;
-  display: inline-block;
   box-sizing: border-box;
   font-size: 24px;
   text-align: center;
@@ -403,4 +408,19 @@ h2 img {
 
 .four-column li {
   width: 22%;
+}
+
+
+@media (max-width: 750px){
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .two-column li,
+  .three-column li,
+  .four-column li  {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
