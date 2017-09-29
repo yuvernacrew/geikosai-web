@@ -1,3 +1,4 @@
+
 .sponser-container {
   display: flex;
   margin-bottom: 24px;
@@ -5,7 +6,7 @@
 
 .sponser-container li {
   position: relative;
-  background-color: #fff;
+  /*background-color: #fff;*/
   text-align: center;
   width: 210px;
   height: 100px;
@@ -20,10 +21,6 @@
 
 .sponser-container li:hover {
   border: 4px solid #f08d24;
-}
-
-.modal-container-left {
-  width: 38%;
 }
 
 .modal-container-right {
@@ -111,4 +108,46 @@
 
 .map-title {
   color: black;
+}
+
+@media(min-width: 750px){
+  .modal-container-left {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 38%;
+  }
+}
+
+@media(max-width:750px){
+  .sponser-container li {
+    width: 48%;
+    height: auto;
+  }
+
+  .sponser-container li img {
+    width: 100%;
+  }
+
+  #sponser-map {
+    width: 85vw;
+    height: 65vw;
+    margin: 0 auto;
+  }
+
+  .modal-container-right,
+  .modal-container-left {
+    width: 100%;
+    position: static;
+  }
+
+  .modal-container-left {
+    margin-bottom: 24px;
+  }
+
+  .modal-container-left img {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
