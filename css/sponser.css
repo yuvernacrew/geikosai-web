@@ -103,3 +103,12 @@
 .shop-comment {
   background-image: url("../images/sponser/icon-comment.png");
 }
+
+#sponser-map {
+  width: 960px;
+  height: 600px;
+}
+
+.map-title {
+  color: black;
+}
