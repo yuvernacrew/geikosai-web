@@ -22,16 +22,16 @@ body {
   font-family: 'Haettenschweiler','honoka', "ヒラギノ明朝 ProN W6", "HiraMinProN-W6",'Helvetica', "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
   color: #fff;
   background-color: #082936;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 
 .text-english {
-  font-family: 'Haettenschweiler', 'Avenir', 'Helvetica Neue', 'Helvetica',' Arial';
+  font-family: 'Haettenschweiler', 'Avenir', 'Helvetica Neue', 'Helvetica',' Arial' !important;
   letter-spacing: 10px;
 }
 
 .text-japanese {
-  font-family: 'honoka', "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  font-family: 'honoka', "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif !important;
 }
 
 /* document color */
@@ -54,6 +54,15 @@ body {
 
 .text-white {
   color: #fff;
+}
+
+.text-emphasis {
+  font-weight: 400;
+}
+
+.text-underline {
+  background: linear-gradient(transparent 80%, #f08d24 20%);
+  line-height: 1.2em;
 }
 
 /* text-align */
@@ -435,5 +444,15 @@ h2 img {
   .four-column li  {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  h1 > img {
+    width: 80%;
+    height: auto;
+  }
+
+  h2 > img {
+    width: 60%;
+    height: auto;
   }
 }

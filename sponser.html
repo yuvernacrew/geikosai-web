@@ -7,11 +7,15 @@
   <link rel='stylesheet' type='text/css' href='css/ress.min.css'>
   <link rel='stylesheet' type='text/css' href='css/default.css'>
   <link rel='stylesheet' type='text/css' href='css/sponser.css'>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
 
   <link rel='stylesheet' type='text/css' href='css/remodal-default-theme.css'>
   <link rel='stylesheet' type='text/css' href='css/remodal.css'>
 
-  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+  <link rel='stylesheet' type='text/css' href='css/slick.css'>
+  <link rel='stylesheet' type='text/css' href='css/slick-theme.css'>
+  <script src='js/slick.min.js'></script>
+
   <script src='js/remodal.js'></script>
   <!-- <script src='js/sponser.js'></script> -->
 </head>
@@ -23,7 +27,7 @@
       <div class='logo-container'>
         <img src='images/common/logo-title.png'>
       </div>
-      <nav class='nav'>
+      <nav class='nav is-pc'>
         <ul class='drop-menu'>
           <li class='drop-menu-item'>
             <a href='#'>ABOUT<img src='images/common/nav-icon.png'></a>
@@ -65,93 +69,587 @@
 
     <!-- ▼ main -->
     <main class='main-container'>
-      <div class='wrapper'>
+      <div class='wrapper text-japanese'>
         <!-- ▼ ここから書いていきましょう！ -->
         <h1><img src="images/sponser/h1-sponser.png" ></h1>
         <ul class='sponser-container flexbox sp-between four-column'>
           <li>
-            <a class="modal-btn" id='1' href='#1'><img src='images/sponser/logo-dan.png'</a>
+            <a class="modal-btn" id='1' href='#1'><img src='images/sponser/logo-dan.png'></a>
           </li>
           <li>
-            <a class="modal-btn" id='2' href='#2'><img src='images/sponser/logo-hamakin.png'</a>
+            <a class="modal-btn" id='2' href='#2'><img src='images/sponser/logo-hamakin.png'></a>
           </li>
           <li>
-            <a class="modal-btn" id='3' href='#3'><img src='images/sponser/logo-kadomatsu.png'</a>
+            <a class="modal-btn" id='3' href='#3'><img src='images/sponser/logo-kadomatsu.png'></a>
           </li>
           <li>
-            <a class="modal-btn" id='4' href='#modal'><img src='images/sponser/logo-kapuri.png'</a>
+            <a class="modal-btn" id='4' href='#4'><img src='images/sponser/logo-kapuri.png'></a>
           </li>
           <li>
-            <a class="modal-btn" id='5' href='#modal'><img src='images/sponser/logo-keith.png'</a>
+            <a class="modal-btn" id='5' href='#5'><img src='images/sponser/logo-keith.png'></a>
           </li>
           <li>
-            <a class="modal-btn" id='6' href='#modal'><img src='images/sponser/logo-ryukaen.png'</a>
+            <a class="modal-btn" id='6' href='#6'><img src='images/sponser/logo-ryukaen.png'></a>
           </li>
           <li>
-            <a class="modal-btn" id='7' href='#modal'><img src='images/sponser/logo-saotome.png'</a>
+            <a class="modal-btn" id='7' href='#7'><img src='images/sponser/logo-saotome.png'></a>
           </li>
           <li>
-            <a class="modal-btn" id='8' href='#modal'><img src='images/sponser/logo-tokugawaen.png'</a>
+            <a class="modal-btn" id='8' href='#8'><img src='images/sponser/logo-tokugawaen.png'></a>
           </li>
           <li>
-            <a class="modal-btn" id='9' href='#modal'><img src='images/sponser/logo-tomoru.png'</a>
+            <a class="modal-btn" id='9' href='#9'><img src='images/sponser/logo-tomoru.png'></a>
           </li>
           <li>
-            <a class="modal-btn" id='10' href='#modal'><img src='images/sponser/logo-ziel.png'</a>
+            <a class="modal-btn" id='10' href='#10'><img src='images/sponser/logo-ziel.png'></a>
           </li>
           <li>
-            <a class="modal-btn" id='11' href='#modal'><img src='images/sponser/logo-sasaki.png'</a>
+            <a class="modal-btn" id='11' href='#11'><img src='images/sponser/logo-sasaki.png'></a>
           </li>
           <li>
-            <a class="modal-btn" id='12' href='#modal'><img src='images/sponser/logo-dashirou.png'</a>
+            <a class="modal-btn" id='12' href='#12'><img src='images/sponser/logo-dashirou.png'></a>
           </li>
         </ul>
 
+        <h2><img src="images/sponser/h2-sponser-map.png" ></h2>
+
 
         <!-- 団十郎 -->
-        <div class="remodal clearfix" data-remodal-id="1" role="dialog">
-          <p><img src="images/sponser/logo-dan.png"></p>
-          <div class="modal-container l-left">
-            <img src="images/sponser/dan-1.png">
+        <div class="remodal clearfix text-japanese l-relative" data-remodal-id="1" role="dialog">
+          <div class="modal-container-left y-center">
+            <div class="shop-img-container">
+              <img src="images/sponser/photo-dan.png">
+            </div>
           </div>
-          <div class="modal-container l-right">
-            <p>春日井市白山町4-8-2
-            0568-51-5003
-            17:00〜23:00(L.O22:30)
-            日曜のみ12:00〜23:00(L.O22:30)
+          <div class="modal-container-right l-right">
+            <h3 class="shop-description"><img src="images/sponser/shop-description.png"></h3>
+            <p class="icon-folder shop-name">団十郎</p>
+            <p class="icon-folder shop-address">春日井市白山町4-8-2</p>
+            <p class="is-sp icon-folder shop-tell"><a href="tel:0123456789">0568-51-5003</a></p>
+            <p class="is-pc icon-folder shop-tell">0568-51-5003</p>
+            <p class="icon-folder shop-time">17:00〜23:00(L.O22:30)<br>
+            日曜のみ12:00〜23:00<br>
+            (L.O22:30)<br>
             定休日：第1.3水曜日</p>
+            <p class="icon-folder shop-link">
+              <a href="http://www.danjuro29.com" target="_blank">ホームページ</a><br>
+              <a href="https://s.tabelog.com/aichi/A2303/A230301/23036018/" target="_blank">食べログ</a><br>
+              <a href="https://www.hotpepper.jp/strJ000414804/" target="_blank">ホットペッパー</a>
+            </p>
+            <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
           </div>
+        </div>
 
-          <div></div>
-
+        <!-- はまきん -->
+        <div class="remodal clearfix text-japanese l-relative" data-remodal-id="2" role="dialog">
+          <div class="modal-container-left y-center">
+            <div class="shop-img-container">
+              <img src="images/sponser/photo-hama.png">
+            </div>
+            <div class="shop-attention">
+              バイト募集中！
+            </div>
+          </div>
+          <div class="modal-container-right l-right">
+            <h3 class="shop-description"><img src="images/sponser/shop-description.png"></h3>
+            <p class="icon-folder shop-name">海の台所 はまきん</p>
+            <p class="icon-folder shop-address">愛知県名古屋市千種区池下2-2-15</p>
+            <p class="is-sp icon-folder shop-tell"><a href="tel:0527517021 ">052-751-7021 </a></p>
+            <p class="is-pc icon-folder shop-tell">052-751-7021</p>
+            <p class="icon-folder shop-time">
+              （平日) 17:00～24:00<br>
+              （土・日・祝日） 16:00～24:00</p>
+            <p class="icon-folder shop-comment">
+              日本酒やワインが豊富☆<br>
+              他では手に入らないプレミアム日本酒も多数取り揃えています☆<br>
+              その他、こだわりの焼酎、ワインも種類豊富！<br>
+              新鮮なお刺身と創作料理<br>
+              毎日オーナーが厳選して仕入れした魚が◎<br>
+              その他、パスタやお肉料理など種類豊富なお料理が楽しめます♪<br>
+              個室も完備！池下駅すぐ♪<br>
+              限定1室の掘りごたつ個室は6名様までOK☆<br>
+              駅近で終電ギリギリまで飲んでもOK！<br>
+              2軒目にも◎<br>
+              毎日深夜1時迄営業
+            </p>
+          </div>
           <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
         </div>
 
-
-
-
-        <div class="remodal" data-remodal-id="2" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-
-
+        <!-- かどまつ -->
+        <div class="remodal clearfix text-japanese l-relative" data-remodal-id="3" role="dialog">
+          <div class="modal-container-left y-center">
+            <div class="shop-img-container">
+              <img src="images/sponser/photo-kadomatsu.jpg">
+            </div>
+            <div class="shop-attention">
+              スタッフ募集中！
+            </div>
+          </div>
+          <div class="modal-container-right l-right">
+            <h3 class="shop-description"><img src="images/sponser/shop-description.png"></h3>
+            <p class="icon-folder shop-name">かどまつ今池店</p>
+            <p class="icon-folder shop-address">名古屋市千種区今池4-14-21<br>
+            地下鉄東山線今池駅4番出口から徒歩1分。</p>
+            <p class="is-sp icon-folder shop-tell"><a href="tel:0527316162">052-731-6162</a></p>
+            <p class="is-pc icon-folder shop-tell">052-731-6162</p>
+            <p class="icon-folder shop-time">午後６：００～深夜２：００まで営業<br>
+            日曜定休</p>
+            <p class="icon-folder shop-comment">
+              <span class="text-underline">味しい焼鳥&鶏料理をご堪能下さい！！</span><br>
+              人気のある日は早く埋まってしまいますのでお早めにご予約下さいませ。<br>
+              焼鳥『かどまつ』深夜２時まで営業！！<br>
+              宴会は『かどまつ』で決まり！！！！<br>
+              ３９９０円 飲み放題90分付コミコミコース<br>
+              ４５００円 飲み放題90分付コミコミコース<br>
+              今すぐお電話０５２－７３１－６１６２まで！！<br>
+              宴会にて幹事様のご要望がありましたらご遠慮なく当店スタッフまで！<br>
+              思い出に残る宴会はかどまつでやるっきゃない！！<br>
+              かどまつ今池店スタッフ募集中！<br>
+              楽しい職場で仕事しませんか？<br>
+              詳しくは、かどまつ今池店にお電話を！
+            </p>
+          </div>
           <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
         </div>
 
-
-        <div class="remodal" data-remodal-id="3" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-
-
+        <!-- 店 -->
+        <div class="remodal clearfix text-japanese l-relative" data-remodal-id="4" role="dialog">
+          <div class="modal-container-left y-center">
+            <div class="shop-img-container">
+              <!-- 店の画像 -->
+              <img src="images/sponser/photo-kapuri.png">
+            </div>
+            <div class="shop-attention">
+              <!-- 店からの忠告 -->
+              アルバイト募集中！
+            </div>
+          </div>
+          <div class="modal-container-right l-right">
+            <h3 class="shop-description"><img src="images/sponser/shop-description.png"></h3>
+            <p class="icon-folder shop-name">
+              <!-- 名前 -->
+              カプリチョーザイオンモール岡崎店
+            </p>
+            <p class="icon-folder shop-address">
+              <!-- 住所 -->
+              愛知県岡崎市戸崎町字外山38-5 イオンモール岡崎1F
+            </p>
+            <p class="is-sp icon-folder shop-tell"><a href="tel:0564590150">
+              <!-- 電話番号 -->
+              0564-59-0150
+            </a></p>
+            <p class="is-pc icon-folder shop-tell">
+              <!-- 電話番号 -->
+              0564-59-0150
+            </p>
+            <p class="icon-folder shop-time">
+              <!-- 時間 -->
+              11:00～23:00 (LO 22:00)
+            </p>
+            <p class="icon-folder shop-link">
+              <a href="http://capricciosa.com/" target="_blank">ホームページ</a><br>
+              <a href="https://www.instagram.com/capricciosa_official" target="_blank">instagram</a>
+            </p>
+            <p class="icon-folder shop-comment">
+              <!-- コメント -->
+              イタリア直輸入のトマトやスパゲッティを使ったパスタメニューをはじめ、ピッツァ、前菜・サラダ、デザートなど多彩な味わいをバライティー豊かに取り揃えています。<br>
+              おすすめは、専用の窯で表面はパリッと香ばしく、内側はもっちりとした食感の本格ナポリスタイルピッツァです。<br>
+              焼きたての熱々を口にすれば、生地のもちっとした食感、香ばしさと塩味、トマトソースの酸味、トッピングした食材の旨味などの味わいが混然一体となって口の中に広がります。<br>
+              お一人でも、取り分けても、テイクアウトでも楽しめる、一度食べたらやみつきの、ナポリスタイルのピッツァです。
+            </p>
+          </div>
           <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
         </div>
 
+        <!-- 店 -->
+        <div class="remodal clearfix text-japanese l-relative" data-remodal-id="5" role="dialog">
+          <div class="modal-container-left y-center">
+            <div class="shop-img-container">
+              <!-- 店の画像 -->
+              <img src="images/sponser/photo-KEiTH.jpg">
+            </div>
+          </div>
+          <div class="modal-container-right l-right">
+            <h3 class="shop-description"><img src="images/sponser/shop-description.png"></h3>
+            <p class="icon-folder shop-name">
+              <!-- 名前 -->
+              株式会社アトリエキース
+            </p>
+            <p class="icon-folder shop-address">
+              <!-- 住所 -->
+              〒464-0007 愛知県名古屋市千種区竹越2-1-32シノダビル1F
+            </p>
+            <p class="is-sp icon-folder shop-tell"><a href="tel:0000000">
+
+            <p class="icon-folder shop-link">
+              <a href="http://www.a-keith.com" target="_blank">
+                WebShop
+              </a>
+            </p>
+            <p class="icon-folder shop-comment">
+              アトリエキースは、名古屋市千種区にある小さなガラス工房です。<br>
+              ステンドグラス製のランプやアクセサリー、サンドブラスト加工による彫刻ガラス製品を<br>
+              オリジナル・デザインで制作しています。<br><br>
+
+              他ではあまり見たことがないようなガラスの作品たち。<br>
+              アトリエキースでは、新しい視点で創造した癒やしの作品をお届けします。<br>
+            </p>
+          </div>
+          <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        </div>
+
+        <!-- 店 -->
+        <div class="remodal clearfix text-japanese l-relative" data-remodal-id="6" role="dialog">
+          <div class="modal-container-left y-center">
+            <div class="shop-img-container">
+              <!-- 店の画像 -->
+              <img src="images/sponser/photo-ryukaen.JPG">
+            </div>
+          </div>
+          <div class="modal-container-right l-right">
+            <h3 class="shop-description"><img src="images/sponser/shop-description.png"></h3>
+            <p class="icon-folder shop-name">
+              <!-- 名前 -->
+              焼肉 龍華園
+            </p>
+            <p class="icon-folder shop-address">
+              <!-- 住所 -->
+              名古屋市千種区向陽1-３-36
+            </p>
+            <p class="is-sp icon-folder shop-tell"><a href="tel:0527633975">
+              <!-- 電話番号 -->
+              052-763-3975
+            </a></p>
+            <p class="is-pc icon-folder shop-tell">
+              <!-- 電話番号 -->
+              052-763-3975
+            </p>
+            <p class="icon-folder shop-time">
+              <!-- 時間 -->
+              火〜土 17:00~24:00<br>
+              日・祝 17:00~23:00<br>
+              （L.O. 閉店１時間前）<br>
+              定休日：月曜日
+            </p>
+            <p class="icon-folder shop-comment">
+              <!-- コメント -->
+              地元の皆様に愛されるお店。<br>
+              自家製秘伝の甘口タレに龍華園カルビが堪能できます。<br>
+              しんたまを使用した「黒毛和牛ローストビーフ」は絶品。<br>
+              とろける甘みが味わえる希少部位「とも三角」も味わえます。
+            </p>
+          </div>
+          <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        </div>
+        <!-- ▲ ここまで！ -->
+
+        <!-- 店 -->
+        <div class="remodal clearfix text-japanese l-relative" data-remodal-id="7" role="dialog">
+          <div class="modal-container-left y-center">
+            <div class="shop-img-container">
+              <!-- 店の画像 -->
+              <img src="images/sponser/photo-saotome.png">
+            </div>
+            <div class="shop-attention">
+              バイト募集
+            </div>
+          </div>
+          <div class="modal-container-right l-right">
+            <h3 class="shop-description"><img src="images/sponser/shop-description.png"></h3>
+            <p class="icon-folder shop-name">
+              <!-- 名前 -->
+              早乙女ふるまゐ
+            </p>
+            <p class="icon-folder shop-address">
+              <!-- 住所 -->
+              〒464-0075  愛知県名古屋市千種区内山3-31-27 今池ゴトービル1F
+            </p>
+            <p class="is-sp icon-folder shop-tell"><a href="tel:05058770498">
+              050-5877-0498
+            </a></p>
+            <p class="is-pc icon-folder shop-tell">
+              050-5877-0498
+            </p>
+            <p class="icon-folder shop-time">
+              <!-- 時間 -->
+              月～金ランチ 11:30～13:00
+              月～土ディナー 17:00～24:00（L.O.23:30）
+              定休日 日曜日
+            </p>
+            <p class="icon-folder shop-comment">
+              <!-- コメント -->
+              当店は、蕎麦をはじめとした本格的な料理を手軽に楽しめる、落ち着いた雰囲気の居酒屋です。<br>
+              当店の昔ながらの雰囲気を感じる外観には、”老舗”という言葉がよく似合います。<br>
+              暖簾をくぐり戸を開けると、古民家風の上品で落ち着いた雰囲気がただよう店内が目に入ります。<br>
+              このほっこり和める雰囲気の店内は女性にも人気で、奥には宴会も行える掘りごたつ座敷を用意しております。<br><br>
+
+              宴会や歓迎会、送別会はもちろん、お蕎麦の美味しいお店をお探しの方は、ぜひお越しください。<br>
+              心を込めた”ふるまい”をさせていただきます。<br>
+              お電話でのご予約も承っております。そのほかご質問など、なんでもお気軽にご相談ください。<br>
+            </p>
+          </div>
+          <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        </div>
+        <!-- ▲ ここまで！ -->
+
+        <!-- 店 -->
+        <div class="remodal clearfix text-japanese l-relative" data-remodal-id="8" role="dialog">
+          <div class="modal-container-left y-center">
+            <div class="shop-img-container">
+              <!-- 店の画像 -->
+              <img src="images/sponser/photo-tokugawaen.jpg">
+            </div>
+            <div class="shop-attention">
+              <!-- 店からの忠告 -->
+              蘇山荘ディナープラン10％OFF
+            </div>
+            <p class="shop-sub-attention">
+              ※ディナープランご利用の4名様以上の女性グループ限定<br>
+              他サービス（プラン）との併用不可<br>
+              火曜日～木曜日限定<br>
+              入店時にご提示<br>
+              有効期限2017年12月21日まで
+            </p>
+          </div>
+          <div class="modal-container-right l-right">
+            <h3 class="shop-description"><img src="images/sponser/shop-description.png"></h3>
+            <p class="icon-folder shop-name">
+              <!-- 名前 -->
+              ガーデンレストラン徳川園 蘇山荘
+            </p>
+            <p class="icon-folder shop-address">
+              <!-- 住所 -->
+              〒461-0023 愛知県名古屋市東区徳川町1001
+            </p>
+            <p class="icon-folder shop-time">
+              <!-- 時間 -->
+              火～金　10:00～17:00(LO16:30)<br>
+              　　　　19:00～23:30(LO23:00)<br>
+              定休日　土日祝・月（月曜日が祝日の場合はその翌日）
+            </p>
+            <p class="icon-folder shop-comment">
+              <!-- コメント -->
+              汎太平洋博覧会（昭和12年）の迎賓館を移築した歴史的建造物で国の登録有形文化財にも指定された蘇山荘は、昼はカフェ、夜はバーとしてお愉しみ頂けます。<br>
+              オススメは幻想的なライトに照らされるバータイムの和空間で充実した品揃えの日本ワインやジャパニーズウイスキー、日本酒などジャパニーズアイテムを愉しむ事！<br>
+              お仲間との会食の利用には料理とフリードリンクがセットになったお得なディナープランもご用意しております。<br>
+              特別な空間で過ごす大人のひとときを是非、お愉しみ下さいませ。
+            </p>
+          </div>
+          <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        </div>
+        <!-- ▲ ここまで！ -->
+
+        <!-- 店 -->
+        <div class="remodal clearfix text-japanese l-relative" data-remodal-id="10" role="dialog">
+          <div class="modal-container-left y-center">
+            <div class="shop-img-container">
+              <!-- 店の画像 -->
+              <img src="images/sponser/photo-ziel.jpg">
+            </div>
+          </div>
+          <div class="modal-container-right l-right">
+            <h3 class="shop-description"></h3>
+            <p class="icon-folder shop-name">
+              <!-- 名前 -->
+              じーる
+            </p>
+            <p class="icon-folder shop-address">
+              <!-- 住所 -->
+              愛知県知立市鳥居1-6-6
+            </p>
+            <p class="icon-folder shop-time">
+              <!-- 時間 -->
+              【ランチ】 11：30～14：00(LO 13：45)<br>
+              ランチ：日曜、月曜定休 <br>
+              【ディナー】17：30～24：00(LO 23：15)<br> 
+              夜：月曜定休<br>
+              ※大型連休の際は変則となります
+            </p>
+            <p class="icon-folder shop-link">
+              <a href="http://www.okinawa-ziel.com/" target="_blank">
+                ホームページ
+              </a>
+            </p>
+            <p class="icon-folder shop-comment">
+              沖縄の雰囲気たっぷりの店内は、ゆったりと仲間や家族で集まるのにピッタリ。<br>
+              美味しい沖縄料理と泡盛などのお酒をご用意してお待ちしています。
+              <!-- コメント -->
+            </p>
+          </div>
+          <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        </div>
+        <!-- ▲ ここまで！ -->
+
+        <!-- 店 -->
+        <div class="remodal clearfix text-japanese l-relative" data-remodal-id="9" role="dialog">
+          <div class="modal-container-left y-center">
+            <div class="shop-img-container">
+              <!-- 店の画像 -->
+              <img src="images/sponser/photo-tomoru.JPG">
+            </div>
+            <div class="shop-attention">
+              <!-- 店からの忠告 -->
+              日～木曜日限定 お会計より10％OFF
+            </div>
+            <p class="shop-sub-attention">
+              割引上限10,000円まで<br>
+              他サービス・割引券併用不可<br>
+              割引使用時はカード会計不可
+            </p>
+          </div>
+          <div class="modal-container-right l-right">
+            <h3 class="shop-description"><img src="images/sponser/shop-description.png"></h3>
+            <p class="icon-folder shop-name">
+              PRIVATE DINING<br>
+              点-TOMORU- 名駅太閤口店
+            </p>
+            <p class="icon-folder shop-address">
+              愛知県名古屋市中村区椿町15-2 ミタニビル8階
+            </p>
+            <p class="is-sp icon-folder shop-tell"><a href="tel:0000000">
+              <!-- 電話番号 -->
+            </a></p>
+            <p class="is-pc icon-folder shop-tell">
+              <!-- 電話番号 -->
+            </p>
+            <p class="icon-folder shop-time">
+              <!-- 時間 -->
+              日・月 17：00～22：30<br>
+              （LO フード21：30 ドリンク22：00）<br>
+              火～土 17：00～23：30<br>
+              （LO フード22：30 ドリンク23：00）
+            </p>
+            <p class="icon-folder shop-link">
+              <a href="https://www.hotpepper.jp/strJ000727015/" target="_blank">
+                Hotpepper
+              </a>
+            </p>
+            <p class="icon-folder shop-comment">
+              名古屋駅太閤口から徒歩１分。落ち着いた店内は全席プライベート感を重視した大人の雰囲気。<br>
+              名古屋駅を見下ろす夜景の見えるカップルシートや対面よりも親密に会話の弾むＬ字型カップルシート、８名様までの完全個室ＶＩＰルームや最大４０名様まで使える宴会スペース、大小様々な個室を１２部屋ご用意しています。<br>
+              和洋のテイストを取り込んだ創作料理は名物の数量限定ローストビーフを始め、真鯛のカルパッチョやチーズフォンデュ・バーニャカウダ・だしまき玉子・ピッツァマルゲリータなど男女問わず喜ばれるメニューを取り揃えております。<br>
+              ドリンクも種類豊富で生ビール・ビヤカクテル・サワー・カクテル・焼酎・日本酒・梅酒・ワイン・シャンパン・ウィスキー・ハイボールとどんな世代のお客様のニーズにもお応えできます。<br>
+              デートで、合コンで、仲間との飲み会、同窓会、歓送迎会、接待…どんなシーンでもお使い頂けますので、皆様のご来店心よりお待ち申し上げます。<br>
+            </p>
+          </div>
+          <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        </div>
         <!-- ▲ ここまで！ -->
       </div>
     </main>
     <!-- ▲ main -->
 
+    <!-- 店 -->
+    <div class="remodal clearfix text-japanese l-relative" data-remodal-id="12" role="dialog">
+      <div class="modal-container-left y-center">
+        <div class="shop-img-container">
+          <!-- 店の画像 -->
+          <img src="images/sponser/photo-dashi.jpg">
+        </div>
+        <div class="shop-attention">
+          <!-- 店からの忠告 -->
+          名市大生優遇！<br>
+          あっという間に時給1200円！
+        </div>
+      </div>
+      <div class="modal-container-right l-right">
+        <h3 class="shop-description"><img src="images/sponser/shop-description.png"></h3>
+        <p class="icon-folder shop-name">
+          <!-- 名前 -->
+          錦三山車楼
+        </p>
+        <p class="icon-folder shop-address">
+          <!-- 住所 -->
+          名古屋市中区錦3-10-14　協和錦ビルB1F
+        </p>
+        <p class="is-sp icon-folder shop-tell"><a href="tel:0529510222">
+          <!-- 電話番号 -->
+          052-951-0222
+        </a></p>
+        <p class="is-pc icon-folder shop-tell">
+          <!-- 電話番号 -->
+          052-951-0222
+        </p>
+        <p class="icon-folder shop-time">
+          <!-- 時間 -->
+          PM5:00〜AM0:00(LO 23:00)<br>
+          日曜定休
+        </p>
+        <p class="icon-folder shop-link">
+          <a href="#http://r.gnavi.co.jp/n056303/" target="_blank">
+            ぐるなび
+          </a>
+        </p>
+      </div>
+      <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    </div>
+    <!-- ▲ ここまで！ -->
+
+    <!-- 店 -->
+    <div class="remodal clearfix text-japanese l-relative" data-remodal-id="11" role="dialog">
+      <div class="modal-container-left y-center">
+        <div class="shop-img-container">
+          <!-- 店の画像 -->
+          <img src="images/sponser/photo-sasaki.png">
+        </div>
+        <div class="shop-attention">
+          <!-- 店からの忠告 -->
+          アルバイト募集中
+        </div>
+      </div>
+      <div class="modal-container-right l-right">
+        <h3 class="shop-description"><img src="images/sponser/shop-description.png"></h3>
+        <p class="icon-folder shop-name">
+          <!-- 名前 -->
+          麺屋 ささき
+        </p>
+        <p class="icon-folder shop-address">
+          <!-- 住所 -->
+          名古屋市東区矢田5-8-53
+        </p>
+        <p class="is-sp icon-folder shop-tell"><a href="tel:0000000">
+          <!-- 電話番号 -->
+          052-711-7676
+        </a></p>
+        <p class="is-pc icon-folder shop-tell">
+          <!-- 電話番号 -->
+        </p>
+        <p class="icon-folder shop-time">
+          <!-- 時間 -->
+          年中無休<br>
+          平日ランチ 11:30〜14:00<br>
+          ディナー 15:30〜23:00<br>
+          土日祝日のみランチ 11:30〜15:00
+        </p>
+        <p class="icon-folder shop-comment">
+          <!-- コメント -->
+          当店のこだわりはラーメンだけではありません。<br>
+          スープは毎日仕込みに18時間かけ、国産のチャーシューや国産のネギ、こだわりの自家製煮卵などなど手塩にかけた料理が並びます。<br>
+          ナゴヤドームの近くにあるので、イベント後に締めの一杯を食べながら思い出に浸ってみては？<br>
+          お客様の思い出に残る一杯をご用意していますのでぜひぜひお立ち寄りください。
+        </p>
+      </div>
+      <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    </div>
+    <!-- ▲ ここまで！ -->
 
 
 
 
+  <script>
+  $(function(){
+    $('.slick').slick({
+      // dots: true,
+      autoplay: true,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true
+    });
+  })
+  </script>
 
 
 
@@ -159,7 +657,7 @@
     <!-- ▼ footer -->
     <footer class='footer'>
       <span class='copy-right'>©GEIKOSAI 2017</span>
-      <ul class='sns-container'>
+      <ul class='sns-container is-pc'>
         <li><a href="#"><img src='images/common/logo-insta.png'></a></li>
         <li><a href="#"><img src='images/common/logo-twitter.png'></a></li>
         <li><a href="#"><img src='images/common/logo-fb.png'></a></li>
