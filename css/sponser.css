@@ -102,15 +102,16 @@
 }
 
 #sponser-map {
-  width: 960px;
-  height: 600px;
+  width: 720px;
+  height: 500px;
+  margin: 0 auto;
 }
 
 .map-title {
   color: black;
 }
 
-@media(min-width: 750px){
+@media(min-width: 780px){
   .modal-container-left {
     position: absolute;
     top: 50%;
@@ -120,7 +121,7 @@
   }
 }
 
-@media(max-width:750px){
+@media(max-width:780px){
   .sponser-container li {
     width: 48%;
     height: auto;
