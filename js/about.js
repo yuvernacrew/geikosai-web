@@ -4,8 +4,8 @@ $(function(){
    // 地図の作成
      map = new google.maps.Map(document.getElementById('about-map'), { // #sampleに地図を埋め込む
        center: {
-          lat: 35.1816645, // 緯度
-          lng: 136.9474646 // 経度
+          lat: 35.181571, // 緯度
+          lng: 136.947799 // 経度
        },
         zoom: 16
      });
@@ -15,7 +15,7 @@ $(function(){
       new google.maps.Point(0,0)/*アイコン位置設定*/
     );
 
-      markerLatLng = new google.maps.LatLng({lat: 35.1816645, lng: 136.9471074});
+      markerLatLng = new google.maps.LatLng({lat: 35.181571, lng: 136.947799});
       marker = new google.maps.Marker({ // マーカーの追加
         position: markerLatLng, // マーカーを立てる位置を指定
         icon: icon,
@@ -36,6 +36,13 @@ $(function(){
    map.setMapTypeId('about-map');
 
   }
+
   google.maps.event.addDomListener(window, 'load', initMap);
+
+
+  $('#navToggle').click(function(){//headerに .openNav を付加・削除
+    $('.sp-header').toggleClass('open-nav');
+    $('.body-container').toggleClass('non-scroll');
+  });
 
 });

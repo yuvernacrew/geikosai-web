@@ -66,6 +66,13 @@
   font-family: 'UtsukushiFONT.otf';
 }
 
+.text-cafe-red{
+  color: #c84a2c;
+}
+
+.text-cafe-black{
+  color: #231815;
+}
 
 .text-pink{
   color: #ff9794;
@@ -73,18 +80,44 @@
 
 #panel-cafe main{
   position: relative;
+  width: 100%;
   background-image: url("../images/event/cafe-background.png");
   background-size: cover;
 }
 
 .top-box{
   position: relative;
+  width: 80%;
+  margin: 70px auto;
+  display: flex;
+  align-items: center;
 }
 
-.top-box img{
-  display: block;
-  width: 70%;
-  margin: 100px auto;
+.cafe-logo-box{
+  width: 250px;
+  margin: 0px 40px;
+}
+
+.top-text{
+  width: 360px;
+  margin-left: 40px;
+}
+
+.top-text-title{
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.top-text-title-bottom {
+  margin-left: 160px;
+}
+
+.top-text-subtitle{
+  line-height: 30px;
+}
+
+.br-sp{
+  display: none;
 }
 
 .line{
@@ -93,8 +126,7 @@
 
 .menu-top{
   position: relative;
-  width: 940px;
-  height: 350px;
+  width: 100%;
   text-align: center;
 }
 
@@ -110,7 +142,7 @@
 
 .menu-bottom{
   position: relative;
-  width: 940px;
+  width: 100%;
   float: left;
 }
 
@@ -118,10 +150,11 @@
   position: absolute;
 }
 
-.dessert, .limited-plate{
+.dessert,
+.limited-plate{
   position: relative;
   display: inline-block;
-  width: 50%;
+  width: 49%;
   height: 400px;
 }
 
@@ -162,7 +195,7 @@
 
 .limited-title{
   width: 46%;
-  left: 210px;
+  left: 200px;
   top: 30px;
 }
 
@@ -187,7 +220,7 @@
 
 .bottom-box{
   position: relative;
-  width: 940px;
+  width: 100%;
   height: 400px;
   text-align: center;
 }
@@ -197,7 +230,7 @@
   margin: 60px 0px;
 }
 
-.cafe-date{
+.date{
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -207,9 +240,174 @@
   margin-top: 50px;
 }
 
+@media (max-width: 750px){
+  #panel-cafe main{
+    background-image: url("../images/event/cafe-sp-background.png");
+  }
+
+  .top-box{
+    position: relative;
+    width: 80%;
+    margin: 15vh auto 0vh;
+    display: block;
+  }
+
+  .cafe-logo-box{
+    width: 100%;
+    margin: 10vh 0vh;
+    text-align: center;
+  }
+
+  .cafe-logo{
+    width: 80%;
+  }
+
+  .top-text{
+    width: 100%;
+    margin-left: 0vh;
+  }
+
+  .top-text-title{
+    font-size: 5.5vw;
+    margin-bottom: 30px;
+    letter-spacing: 0.5vw;
+  }
+
+
+  .top-text-title-bottom {
+    margin-left: 0;
+    text-align: right;
+  }
+
+  .top-text-subtitle{
+    font-size: 4vw;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.5vw;
+  }
+
+  .br-sp{
+    display: block;
+  }
+
+  .lunch-text{
+    width: 80%;
+    margin-top: 10vh;
+  }
+
+  .lunch-menu{
+    float: none;
+  }
+
+  .lunch-menu img{
+    width: 65%;
+    margin: 2vh 0vh;
+  }
+
+  .menu-bottom{
+    position: relative;
+    float: none;
+  }
+
+  .menu-bottom img{
+    position: static;
+  }
+
+  .dessert,
+  .limited-plate{
+    position: relative;
+    display: block;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .dessert-title{
+    display: block;
+    margin: 2vh auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  .dessert-menu img{
+    display: block;
+    width: 90%;
+    margin: 5vh auto;
+  }
+
+  .limited-title{
+    position: static;
+    display: block;
+    width: 100%;
+    margin: 3vh auto;
+  }
+
+  .limited-text{
+    position: static;
+    text-align: center;
+    font-size: 3vw;
+    line-height: 2vh;
+    letter-spacing: 0.3vw;
+  }
+
+  .limited-img{
+    position: static;
+    display: block;
+    width: 80%;
+    margin: 1vh auto;
+  }
+
+  .special-title{
+    position: static;
+    display: block;
+    margin: 3vh auto;
+    width: 60%;
+  }
+
+  .special-text{
+    position: static;
+    font-size: 3vw;
+    line-height: 2vh;
+    letter-spacing: 0.3vw;
+    text-align: center;
+  }
+
+  .special-img{
+    position: static;
+    display: block;
+    width: 80%;
+    margin: 1vh auto 6vh;
+  }
+
+  .bottom-box{
+    position: relative;
+    height: auto;
+    text-align: center;
+  }
+
+  .cafe-hours{
+    width: 70%;
+    margin: 5vh 0vw 0vh;
+  }
+
+  .date{
+    font-size: 6vw;
+    letter-spacing: 0vh;
+    margin: 5vh 0vw;
+  }
+
+  .bottom-text{
+    font-size: 3.5vw;
+    letter-spacing: 0.3vw;
+    margin-bottom: 10vh;
+  }
+
+}
+
 /*-----------------
   ws
 -----------------*/
+
 .ws-container {
   display: block;
   width: 100%;
@@ -340,11 +538,320 @@
 
   .ws-title {
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: -1px;
   }
 
   .ws-text-container img {
     display: none;
+  }
+
+}
+
+
+
+
+
+/*------------
+  booth
+------------*/
+
+
+.booth-title {
+  width: 100%;
+  border-bottom: solid  10px #f08d24;
+}
+
+.border-top{
+  border-top: solid 10px #f08d24;
+}
+
+.booth-title span{
+  font-size: 36px;
+  line-height: 48px;
+  padding-left: 5%;
+}
+
+.exhabition-sentence {
+  width: 80%;
+  margin:  8% 10%;
+}
+
+.exhabition-sentence p {
+  line-height: 1.6;
+}
+
+.text-accent {
+  font-size: 12px;
+}
+
+.exhabition-thame {
+  margin-top: 40px;
+}
+
+.uni {
+  border-bottom: dashed 5px #f08d24;
+}
+
+.exhabition-img-container {
+  float: left;
+  position: relative;
+  width: 540px;
+  padding-left: 20px;
+}
+
+.exhabition-img-container p {
+  font-size: 16px;
+  width: 100%;
+}
+
+.img-block p {
+  font-size: 10px;
+  color: #f08d24;
+}
+
+#goods-store .sankaku{
+  margin-left: 66%;
+}
+
+.booth{
+  float: left;
+  margin: 55px 10%;
+  width: 80%;
+}
+
+.booth-select {
+  display: inline-block;
+  width: 100%;
+}
+
+.booth-section {
+  margin-bottom: 24px;
+}
+
+.booth-select label{
+  display: block;
+  float: left;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.booth-select img {
+  display: inline-block;
+}
+
+
+
+
+.booth-select input[type="radio"]{
+  display: none;
+}
+
+.booth-select > .booth-store > div {
+  display: none;
+}
+
+#booth-foods:checked ~ .booth-store > #foods-store{
+  display: block;
+}
+#booth-goods:checked ~ .booth-store > #goods-store{
+  display: block;
+}
+
+.booth-store{
+    border-top: none;
+    width:100%;
+    overflow:
+    hidden;clear:both;
+    margin: auto;
+    float: left;
+}
+
+.sankaku{
+  width: 20%;
+  height: 76px;
+  margin-left: 15%;
+}
+
+
+.sankaku11 {
+  position: relative;
+}
+
+.sankaku11:before,
+.sankaku11:after {
+    width: 100%;
+    position: absolute;
+    left: 42%;
+    top: 20px;
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    border-width: 30px;
+    margin: 0 0 0 0px;
+}
+
+.sankaku11:after {
+    border-bottom-color: #082936;
+    margin-left: -20px;
+}
+.sankaku11:before {
+    border-bottom-color: #f08d24;
+    margin: -2px 0 0 -20px;
+}
+
+
+
+#foods-store, #goods-store{
+  font-family: 'honoka';
+    border-top: none;
+    width:100%;
+    overflow:
+    hidden;clear:both;
+    margin: auto;
+    float: left;
+}
+
+.booth-store ul{
+  border: 2px solid #f08d24;
+  padding: 6%;
+}
+
+.booth-store li {
+  width: 48%;
+  float: left;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.booth-store img{
+  width: 32%;
+  float: left;
+}
+
+
+.booth-store li span{
+  display: block;
+  color: #f08d24;
+  font-size: 18px;
+  float: left;
+  width: 48%;
+  margin: 5% 0 5% 10%;
+}
+
+
+.booth-store li p {
+  word-wrap: break-word;
+  font-size: 16px;
+  float: left;
+  margin-left: 10%;
+  width: 58%;
+}
+
+@media(min-width: 780px){
+  .exhabition-container {
+      display: block;
+      padding: 32px 0 32px 100px;
+      width: 100%;
+    }
+
+  .img-block {
+    position: absolute;
+    width: 168px;
+  }
+
+  .l-img-01 {
+    top: 50px;
+    right: 175px;
+    z-index: 1;
+  }
+
+  .l-img-02 {
+    top: -20px;
+    right: 20px;
+  }
+
+  .l-img-03 {
+    top: 60px;
+    left: 20px;
+  }
+
+  .l-img-04 {
+    top: 60px;
+    left: 240px;
+  }
+
+  .text-accent {
+    background: linear-gradient(transparent 80%, #f08d24 20%);
+    line-height: 1.2em;
+  }
+
+}
+
+@media(max-width: 780px){
+  .exhabition-container{
+    width: 86%;
+    margin-left: 8%;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .booth {
+    width: 90%;
+    margin: 55px 5%;
+  }
+
+  .exhabition-container img {
+    float: none;
+  }
+
+  .exhabition-container > img {
+    width: 74%;
+  }
+
+  .exhabition-title {
+    margin-bottom: 24px;
+  }
+
+  .exhabition-img-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .exhabition-img-container p:nth-child(2){
+    margin-bottom: 12px;
+  }
+
+  .sankaku{
+    height: 60px;
+  }
+
+  .booth-label-img img {
+    width: 60%;
+  }
+
+  .sankaku11:before,
+  .sankaku11:after {
+    top: 4px;
+  }
+
+  #goods-store .sankaku{
+    margin-left: 60%;
+  }
+
+  .booth-store li {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .booth-store li span{
+    font-size: 12px;
+  }
+
+
+  .booth-store li p {
+    font-size: 12px;
   }
 }
