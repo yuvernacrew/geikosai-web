@@ -38,11 +38,4 @@ $(function(){
   }
 
   google.maps.event.addDomListener(window, 'load', initMap);
-
-
-  $('#navToggle').click(function(){//headerに .openNav を付加・削除
-    $('.sp-header').toggleClass('open-nav');
-    $('.body-container').toggleClass('non-scroll');
-  });
-
 });

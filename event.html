@@ -10,12 +10,13 @@
   <link rel='stylesheet' type='text/css' href='css/event.css'>
 
   <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+  <script src="js/script.js"></script>
 </head>
 
 <body>
   <div class='body-container'>
     <!-- ▼ header -->
-    <header class='header'>
+    <header class='header is-pc'>
       <div class='logo-container'>
         <img src='images/common/logo-title.png'>
       </div>
@@ -49,6 +50,23 @@
               <li><a href='#'>graphic</a></li>
             </ul>
           </li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="sp-header is-sp">
+      <div id="navToggle">
+        <div class="nav-overlay"></div>
+        <div class="l-relative">
+          <span></span> <span></span> <span></span>
+        </div>
+      </div><!--#navToggle END-->
+      <nav>
+        <ul>
+          <li><a href='#'>ABOUT</a></li>
+          <li><a href='#'>EVENT</a></li>
+          <li><a href='#'>SPONSER</a></li>
+          <li><a href='#'>CM</a></li>
         </ul>
       </nav>
     </header>
@@ -443,7 +461,7 @@
     <!-- ▼ footer -->
     <footer class='footer'>
       <span class='copy-right'>©GEIKOSAI 2017</span>
-      <ul class='sns-container'>
+      <ul class='sns-container is-pc'>
         <li><a href="#"><img src='images/common/logo-insta.png'></a></li>
         <li><a href="#"><img src='images/common/logo-twitter.png'></a></li>
         <li><a href="#"><img src='images/common/logo-fb.png'></a></li>
