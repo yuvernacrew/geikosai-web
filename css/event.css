@@ -241,6 +241,10 @@
 }
 
 @media (max-width: 750px){
+  #panels .container {
+    border: 5px solid #f08d24;
+  }
+
   #panel-cafe main{
     background-image: url("../images/event/cafe-sp-background.png");
   }

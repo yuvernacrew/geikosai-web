@@ -32,6 +32,7 @@ body {
 
 .text-japanese {
   font-family: 'honoka', "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif !important;
+  line-height: 1.6;
 }
 
 /* document color */

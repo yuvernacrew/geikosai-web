@@ -36,7 +36,8 @@
 }
 
 .access-container {
-  width: 100%;
+  width: 720px;
+  margin: 0 auto;
 }
 
 .access-container img {
