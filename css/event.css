@@ -53,6 +53,130 @@
   display: none;
 }
 
+/*-----------------
+  ws
+-----------------*/
+.event-container {
+  width: 48%;
+}
+
+.event-container.left {
+  float: left;
+}
+
+.event-container.right {
+  float: right;
+}
+
+.event-date {
+  color: #f08d24;
+  text-align: center;
+  font-size: 32px;
+  margin: 40px 0;
+}
+
+.event-list {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.event-list li {
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 160px;
+  border: 4px solid #f08d24;
+  margin-bottom: 54px;
+}
+
+.event-list li.double {
+  height: 374px;
+}
+
+.event-detail {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.event-title {
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+#panel-stage main{
+  position: relative;
+  width: 100%;
+}
+
+.timeline-container {
+  position: absolute;
+  width: 100px;
+  left: 50%;
+  top: 124px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.timeline-container li {
+  margin-bottom: 116px;
+}
+
+.timeline-container li img,
+.timeline-container li {
+  width: 100%;
+}
+
+.vertical-line {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  background-color: #f08d24;
+}
+
+@media(max-width:750px){
+  .event-container {
+    width: 100%;
+    float: none;
+  }
+
+  .event-list {
+    width: 90%;
+  }
+
+  .event-list li,
+  .event-list li.double {
+    height: 80px;
+    margin-bottom: 40px;
+  }
+
+  .event-title {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .time-stamp {
+    position: absolute;
+    color: #f08d24;
+    font-size: 14px;
+    top: -28px;
+  }
+
+  .event-detail {
+    width: 96%;
+    left: 2%;
+  }
+}
 /*-------------
   cafe
 ------------ */
@@ -795,6 +919,15 @@
 }
 
 @media(max-width: 780px){
+  .booth-title {
+    width: 100%;
+    border-bottom: solid  5px #f08d24;
+  }
+
+  .border-top{
+    border-top: solid 5px #f08d24;
+  }
+  
   .exhabition-container{
     width: 86%;
     margin-left: 8%;

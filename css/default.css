@@ -213,21 +213,52 @@ body {
   template
 ------------*/
 
-.body-container {
-  width: 100vw;
-  height: 100vh;
-  box-sizing: border-box;
-  border: 10px solid #f08d24;
+html:before,
+html:after,
+body:before,
+body:after {
+  content: "";
+  background: #f08d24;
   position: fixed;
-  overflow-y: scroll;
+  display: block;
+  z-index: 5;
 }
+
+html:before {
+    height: 10px;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+html:after {
+    width: 10px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+body:before {
+    height: 10px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+body:after {
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
 
 .non-scroll {
   overflow-y: hidden;
 }
 
 .main-container {
-  margin: 100px 0;
+  margin: 120px 0;
   width: 100%;
 }
 
@@ -246,6 +277,7 @@ body {
   background-color: #082936;
   position: fixed;
   top: 40px;
+  left: 10px;
   z-index: 100;
 }
 
@@ -478,6 +510,7 @@ body {
   background-color: #082936;
   position: fixed;
   bottom: 10px;
+  left: 10px;
   z-index: 2;
 }
 
@@ -560,13 +593,17 @@ h2 img {
 
 
 @media (max-width: 780px){
+  body {
+    width: 100%;
+  }
+
   .main-container {
-    margin: 55px 0;
+    margin: 55px 0 80px;
     width: 100%;
   }
 
   .wrapper {
-    width: 90%;
+    width: 86%;
     margin: 0 auto;
   }
 

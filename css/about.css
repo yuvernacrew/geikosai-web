@@ -113,6 +113,10 @@
     margin-bottom: 16px;
   }
 
+  .access-container {
+    width: 100%;
+  }
+
   #about-map {
     width: 85vw;
     height: 65vw;

@@ -14,461 +14,546 @@
 </head>
 
 <body>
-  <div class='body-container'>
-    <!-- ▼ header -->
-    <header class='header is-pc'>
-      <div class='logo-container'>
-        <img src='images/common/logo-title.png'>
+  <!-- ▼ header -->
+  <header class='header is-pc'>
+    <div class='logo-container'>
+      <img src='images/common/logo-title.png'>
+    </div>
+    <nav class='nav'>
+      <ul class='drop-menu'>
+        <li class='drop-menu-item'>
+          <a href='about.html'>ABOUT<img src='images/common/nav-icon.png'></a>
+          <ul class='sub-menu'>
+            <li><a href='about.html#theme'>theme</a></li>
+            <li><a href='about.html#access'>access</a></li>
+            <li><a href='about.html#sns'>sns</a></li>
+          </ul>
+        </li>
+        <li class='drop-menu-item'>
+          <a href='event.html'>EVENT<img src='images/common/nav-icon.png'></a>
+          <ul class='sub-menu'>
+            <li><a href='event.html#stage'>stage</a></li>
+            <li><a href='event.html#cafe'>cafe</a></li>
+            <li><a href='event.html#ws'>workshop</a></li>
+            <li><a href='event.html#booth'>booth</a></li>
+          </ul>
+        </li>
+        <li class='drop-menu-item'>
+          <a href='sponser.html'>SPONSER<img src='images/common/nav-icon.png'></a>
+        </li>
+
+        <li class='drop-menu-item'>
+          <a href='cm.html'>CM<img src='images/common/nav-icon.png'></a>
+          <ul class='sub-menu'>
+            <li><a href='cm.html#movie'>movie</a></li>
+            <li><a href='cm.html#graphic'>graphic</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <header class="sp-header is-sp">
+    <div id="navToggle">
+      <div class="nav-overlay"></div>
+      <div class="l-relative">
+        <span></span> <span></span> <span></span>
       </div>
-      <nav class='nav'>
-        <ul class='drop-menu'>
-          <li class='drop-menu-item'>
-            <a href='about.html'>ABOUT<img src='images/common/nav-icon.png'></a>
-            <ul class='sub-menu'>
-              <li><a href='about.html#theme'>theme</a></li>
-              <li><a href='about.html#access'>access</a></li>
-              <li><a href='about.html#sns'>sns</a></li>
-            </ul>
-          </li>
-          <li class='drop-menu-item'>
-            <a href='event.html'>EVENT<img src='images/common/nav-icon.png'></a>
-            <ul class='sub-menu'>
-              <li><a href='event.html#stage'>stage</a></li>
-              <li><a href='event.html#cafe'>cafe</a></li>
-              <li><a href='event.html#workshop'>workshop</a></li>
-              <li><a href='event.html#booth'>booth</a></li>
-            </ul>
-          </li>
-          <li class='drop-menu-item'>
-            <a href='#'>SPONSER<img src='images/common/nav-icon.png'></a>
-          </li>
+    </div>
+    <!--#navToggle END-->
+    <nav>
+      <ul>
+        <li><a href='about.html'>ABOUT</a></li>
+        <li><a href='event.html'>EVENT</a></li>
+        <li><a href='sponser.html'>SPONSER</a></li>
+        <li><a href='cm.html'>CM</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ▼ main -->
+  <main class='main-container'>
+    <div class='wrapper'>
+      <h1><img src="images/event/h1-event.png"></h1>
 
-          <li class='drop-menu-item'>
-            <a href='#'>CM<img src='images/common/nav-icon.png'></a>
-            <ul class='sub-menu'>
-              <li><a href='#'>movie</a></li>
-              <li><a href='#'>graphic</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <header class="sp-header is-sp">
-      <div id="navToggle">
-        <div class="nav-overlay"></div>
-        <div class="l-relative">
-          <span></span> <span></span> <span></span>
-        </div>
-      </div><!--#navToggle END-->
-      <nav>
-        <ul>
-          <li><a href='#'>ABOUT</a></li>
-          <li><a href='#'>EVENT</a></li>
-          <li><a href='#'>SPONSER</a></li>
-          <li><a href='#'>CM</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- ▲ header -->
-
-    <!-- ▼ main -->
-    <main class='main-container'>
-      <div class='wrapper'>
-        <h1><img src="images/event/h1-event.png"></h1>
-
-        <input id="stage" class="panel-radios" type="radio" name="tab-radios" checked>
-        <input id="cafe" class="panel-radios" type="radio" name="tab-radios">
-        <input id="ws" class="panel-radios" type="radio" name="tab-radios">
-        <input id="booth" class="panel-radios" type="radio" name="tab-radios">
+      <input id="stage" class="panel-radios" type="radio" name="tab-radios" checked>
+      <input id="cafe" class="panel-radios" type="radio" name="tab-radios">
+      <input id="ws" class="panel-radios" type="radio" name="tab-radios">
+      <input id="booth" class="panel-radios" type="radio" name="tab-radios">
 
 
-        <ul class='sub-nav flexbox sp-between four-column'>
-          <li id="nav-stage"><label class="panel-label" for="stage">stage</label></li>
-          <li id="nav-cafe"><label class="panel-label" for="cafe">cafe</label></li>
-          <li id="nav-ws"><label class="panel-label" for="ws">workshop</label></li>
-          <li id="nav-booth"><label class="panel-label" for="booth">booth</label></li>
-        </ul>
+      <ul class='sub-nav flexbox sp-between four-column'>
+        <li id="nav-stage"><label class="panel-label" for="stage">stage</label></li>
+        <li id="nav-cafe"><label class="panel-label" for="cafe">cafe</label></li>
+        <li id="nav-ws"><label class="panel-label" for="ws">workshop</label></li>
+        <li id="nav-booth"><label class="panel-label" for="booth">booth</label></li>
+      </ul>
 
-        <div id="panels">
-          <div class="container">
-            <section id="panel-stage">
-              <main>
-                <!-- ▼stage -->
-                <p>stage</p>
-                <!-- ▲stage -->
-              </main>
-            </section>
-            <section id="panel-cafe">
-              <main>
-                <!-- ▼cafe-->
-                <div class="top-box">
-                  <div class="cafe-logo-box">
-                    <img class="cafe-logo" src="images/event/cafe-logo.png">
-                  </div>
-                  <div class="top-text">
-                    <p class="top-text-title text-cafe-red">ほどけたリボンと</p>
-                    <p class="top-text-title text-cafe-red top-text-title-bottom">ほどけた自分</p>
-                    <p class="top-text-subtitle text-cafe-black">箱のリボンを解いて<br class="br-sp">新しいものに出会う<br>そんなきっかけを作るカフェ</p>
-                  </div>
+      <div id="panels">
+        <div class="container">
+          <section id="panel-stage">
+            <main class="clearfix">
+              <!-- ▼stage -->
+              <div class="event-container left">
+                <p class="event-date">10/28(sat)</p>
+                <ul class="event-list text-japanese">
+                  <li>
+                    <span class="is-sp time-stamp">10:00〜</span>
+                    <div class="event-detail text-japanese"><span class="event-title">芸工CM</span>
+                    芸工祭の魅力をゆるりと紹介します。</div>
+                  </li>
+                  <li>
+                    <span class="is-sp time-stamp">11:00〜</span>
+                    <div class="event-detail"><span class="event-title">運選手権</span>
+                    芸工一の運の持ち主が決まります！</div>
+                  </li>
+                  <li>
+                    <span class="is-sp time-stamp">12:00〜</span>
+                    <div class="event-detail"><span class="event-title">コンビ王</span>
+                    コンビの強い絆が試されます！</div>
+                  </li>
+                  <li>
+                    <span class="is-sp time-stamp">13:00〜</span>
+                    <div class="event-detail"><span class="event-title">ダンス</span>
+                    さまざまな人たちがかっこよく舞います</div>
+                  </li>
+                  <li>
+                    <span class="is-sp time-stamp">14:00〜</span>
+                    <div class="event-detail"><span class="event-title">モテたい芸人</span>
+                    切実な願いをお聞きください。</div>
+                  </li>
+                  <li>
+                    <span class="is-sp time-stamp">15:00〜</span>
+                    <div class="event-detail"><span class="event-title">リアクション王</span>
+                    みんなが笑顔になれる企画です。</div>
+                  </li>
+                  <li>
+                    <span class="is-sp time-stamp">16:00〜</span>
+                    <div class="event-detail"><span class="event-title">部署対抗</span>
+                    部署への熱い想いがぶつかり合います！</div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="vertical-line is-pc"></div>
+
+              <ul class="timeline-container is-pc">
+                <li><img src="images/event/pop-time-10.png"></li>
+                <li><img src="images/event/pop-time-11.png"></li>
+                <li><img src="images/event/pop-time-12.png"></li>
+                <li><img src="images/event/pop-time-13.png"></li>
+                <li><img src="images/event/pop-time-14.png"></li>
+                <li><img src="images/event/pop-time-15.png"></li>
+                <li><img src="images/event/pop-time-16.png"></li>
+              </ul>
+
+              <div class="event-container right">
+                <p class="event-date">10/29(sun)</p>
+                <ul class="event-list text-japanese">
+                  <li class="double">
+                    <span class="is-sp time-stamp">10:00〜</span>
+                    <div class="event-detail"><span class="event-title">芸工モーニング</span>
+                    芸工の朝にさわやかな笑いをお届けします。</div>
+                  </li>
+                  <li>
+                    <span class="is-sp time-stamp">12:00〜</span>
+                    <div class="event-detail"><span class="event-title">芸工カラオケ</span>
+                    芸工生歌うまスギィ！</div>
+                  </li>
+                  <li>
+                    <span class="is-sp time-stamp">13:00〜</span>
+                    <div class="event-detail"><span class="event-title">脳みそ夫</span>
+                    新進気鋭の芸人、<br>
+                    脳みそ夫さんのステージです！</div>
+                  </li>
+                  <li>
+                    <span class="is-sp time-stamp">14:00〜</span>
+                    <div class="event-detail"><span class="event-title">フィーリングカップル</span>
+                    芸工に新たなカップルが誕生しそうです。</div>
+                  </li>
+                  <li>
+                    <span class="is-sp time-stamp">15:00〜</span>
+                    <div class="event-detail"><span class="event-title">お便りボックス</span>
+                    その願い芸工祭が叶えます。</div>
+                  </li>
+                  <li>
+                    <span class="is-sp time-stamp">16:00〜</span>
+                    <div class="event-detail"><span class="event-title">ぬるぬる相撲</span>
+                    今年もやります</div>
+                  </li>
+                </ul>
+              </div>
+              <!-- ▲stage -->
+            </main>
+          </section>
+          <section id="panel-cafe">
+            <main>
+              <!-- ▼cafe-->
+              <div class="top-box">
+                <div class="cafe-logo-box">
+                  <img class="cafe-logo" src="images/event/cafe-logo.png">
                 </div>
-
-                <img class="line" src="images/event/cafe-line.png" alt="">
-
-                <div class="menu-top">
-                  <img class="lunch-text" src="images/event/cafe-h2-01.png" alt="">
-                  <div class="lunch-menu">
-                    <img src="images/event/img-lunch01.png" alt="">
-                    <img src="images/event/img-lunch02.png" alt="">
-                    <img src="images/event/img-lunch03.png" alt="">
-                  </div>
+                <div class="top-text">
+                  <p class="top-text-title text-cafe-red">ほどけたリボンと</p>
+                  <p class="top-text-title text-cafe-red top-text-title-bottom">ほどけた自分</p>
+                  <p class="top-text-subtitle text-cafe-black">箱のリボンを解いて<br class="br-sp">新しいものに出会う<br>そんなきっかけを作るカフェ</p>
                 </div>
-                <div class="menu-bottom">
-                  <div class="dessert">
-                    <img class="dessert-title" src="images/event/cafe-h3-01.png" alt="">
-                    <div class="dessert-menu">
-                      <img class="dessert1" src="images/event/img-dessert01.png" alt="">
-                      <img class="dessert2" src="images/event/img-dessert02.png" alt="">
-                      <img class="dessert3" src="images/event/img-dessert03.png" alt="">
-                    </div>
-                  </div>
-                  <div class="limited-plate">
-                    <img class="limited-title" src="images/event/cafe-h3-03.png" alt="">
-                    <p class="limited-text text-pink">今年は数量限定プレートを<br>ご用意いたしました。</p>
-                    <img class="limited-img" src="images/event/img-limited-plate.png" alt="">
-                    <img class="special-title" src="images/event/cafe-h3-02.png" alt="">
-                    <p class="special-text text-pink">××××××××××××<br>×××××××</p>
-                    <img class="special-img" src="images/event/img-cafe-sub.png" alt="">
-                  </div>
+              </div>
+
+              <img class="line" src="images/event/cafe-line.png" alt="">
+
+              <div class="menu-top">
+                <img class="lunch-text" src="images/event/cafe-h2-01.png" alt="">
+                <div class="lunch-menu">
+                  <img src="images/event/img-lunch01.png" alt="">
+                  <img src="images/event/img-lunch02.png" alt="">
+                  <img src="images/event/img-lunch03.png" alt="">
                 </div>
-
-                <img class="line" src="images/event/cafe-line.png" alt="">
-
-                <div class="bottom-box">
-                  <img class="cafe-hours" src="images/event/cafe-h2-02.png" alt="">
-                  <p class="date text-pink">10/28(sat) 10:00〜16:30</p>
-                  <p class="date text-pink">10/29(sun) 10:00〜16:00</p>
-                  <p class="bottom-text text-pink">ステージ横の食堂にて営業致します。<br class="br-sp">皆様のご来店、お待ちしております。</p>
-                </div>
-                <!-- ▲cafe -->
-              </main>
-            </section>
-
-            <section id="panel-ws">
-              <main class="text-japanese ws-main">
-                <!-- ▼ws-->
-                <div class="ws-container">
-                  <img class="ws-main-img" src="images/event/ws1-img-01.png">
-                  <div class="ws-text-container left-corner l-left l-relative">
-                    <span class="ws-number ws-number-left text-orange is-pc">work shop 1</span>
-                    <div class="ws-text-block ws-block-left text-right">
-                      <span class="ws-title">プログラミングの世界を体験しよう</span>
-                      <img class="ws1-img" src="images/event/ws1-img-02.png">
-                      <p>
-                        今話題のVRを使って、<br class="is-pc"> プログラミングの世界に触れてみませんか？
-                        <br> とても人気のあるVRの映像やそのゲームの
-                        <br class="is-pc"> 世界ですが、それを裏で支えているのは
-                        <br class="is-pc"> プログラミングという一つ一つの
-                        <br class="is-pc"> 文字達の集まりです。
-                        <br> その凄さ、面白さを一緒に体験してみましょう！
-                        <br> ＊この体験は、13未満のお子様の参加はできません
-                        <br class="is-pc"> （VR使用規定による）。予めご了承ください
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="ws-container">
-                  <img class="ws-main-img" src="images/event/ws2-img-01.png">
-                  <div class="ws-text-container right-corner l-right l-relative">
-                    <span class="ws-number ws-number-right text-orange is-pc">work shop 2</span>
-                    <div class="ws-text-block ws-block-right text-left">
-                      <span class="ws-title">理想の部屋を作ろう</span>
-                      <img class="ws2-img" src="images/event/ws2-img-02.png">
-                      <p>
-                        こんな部屋に住みたい…!<br> そんな夢を形にしてみましょう！
-                        <br> 小さな真っ白な模型の部屋を、
-                        <br class="is-pc"> あなた好みの壁紙・家具で
-                        <br class="is-pc"> コーディネートしてください。
-                        <br> 図工が好きな方大歓迎！
-                        <br> 大人も子供も誰でも参加できます。
-                        <br> 完成した模型は持ち帰ることができます。
-                        <br>
-                      </p>
-                    </div>
+              </div>
+              <div class="menu-bottom">
+                <div class="dessert">
+                  <img class="dessert-title" src="images/event/cafe-h3-01.png" alt="">
+                  <div class="dessert-menu">
+                    <img class="dessert1" src="images/event/img-dessert01.png" alt="">
+                    <img class="dessert2" src="images/event/img-dessert02.png" alt="">
+                    <img class="dessert3" src="images/event/img-dessert03.png" alt="">
                   </div>
                 </div>
+                <div class="limited-plate">
+                  <img class="limited-title" src="images/event/cafe-h3-03.png" alt="">
+                  <p class="limited-text text-pink">今年は数量限定プレートを<br>ご用意いたしました。</p>
+                  <img class="limited-img" src="images/event/img-limited-plate.png" alt="">
+                  <img class="special-title" src="images/event/cafe-h3-02.png" alt="">
+                  <p class="special-text text-pink">××××××××××××<br>×××××××</p>
+                  <img class="special-img" src="images/event/img-cafe-sub.png" alt="">
+                </div>
+              </div>
 
-                <div class="ws-container">
-                  <img class="ws-main-img" src="images/event/ws3-img-01.png">
-                  <div class="ws-text-container left-corner l-left l-relative">
-                    <img class="ws3-img" src="images/event/ws3-img-02.png">
-                    <span class="ws-number ws-number-left text-orange is-pc"> work shop 3 </span>
-                    <div class="ws-text-block ws-block-left text-right">
-                      <span class="ws-title">ハンカチを作ろう〜絞り染め〜</span>
-                      <p>
-                        染物体験してみませんか。<br> 今回は２種類の染め方で世界に一枚だけの
-                        <br class="is-pc"> オリジナルハンカチを作ろう！
-                        <br> 子供から大人までどなたでも
-                        <br class="is-pc"> 簡単にできますので
-                        <br class="is-pc"> 気軽にお越しください。
-                        <br> もちろん作ったハンカチは
-                        <br class="is-pc"> 持ち帰ることができますよ。
-                        <br> 芸術の秋。作品作りにお一ついかがですか？
-                        <br>
-                      </p>
-                    </div>
+              <img class="line" src="images/event/cafe-line.png" alt="">
+
+              <div class="bottom-box">
+                <img class="cafe-hours" src="images/event/cafe-h2-02.png" alt="">
+                <p class="date text-pink">10/28(sat) 10:00〜16:30</p>
+                <p class="date text-pink">10/29(sun) 10:00〜16:00</p>
+                <p class="bottom-text text-pink">ステージ横の食堂にて営業致します。<br class="br-sp">皆様のご来店、お待ちしております。</p>
+              </div>
+              <!-- ▲cafe -->
+            </main>
+          </section>
+
+          <section id="panel-ws">
+            <main class="text-japanese ws-main">
+              <!-- ▼ws-->
+              <div class="ws-container">
+                <img class="ws-main-img" src="images/event/ws1-img-01.png">
+                <div class="ws-text-container left-corner l-left l-relative">
+                  <span class="ws-number ws-number-left text-orange is-pc">work shop 1</span>
+                  <div class="ws-text-block ws-block-left text-right">
+                    <span class="ws-title">プログラミングの世界を体験しよう</span>
+                    <img class="ws1-img" src="images/event/ws1-img-02.png">
+                    <p>
+                      今話題のVRを使って、<br class="is-pc"> プログラミングの世界に触れてみませんか？
+                      <br> とても人気のあるVRの映像やそのゲームの
+                      <br class="is-pc"> 世界ですが、それを裏で支えているのは
+                      <br class="is-pc"> プログラミングという一つ一つの
+                      <br class="is-pc"> 文字達の集まりです。
+                      <br> その凄さ、面白さを一緒に体験してみましょう！
+                      <br> ＊この体験は、13未満のお子様の参加はできません
+                      <br class="is-pc"> （VR使用規定による）。予めご了承ください
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <!-- ▲ws -->
-              </main>
-            </section>
-            <section id="panel-booth">
-              <main>
-                <!-- ▼booth-->
-                <div class="booth-title"><span>展示紹介</span></div>
-
-                <div class="exhabition-sentence">
-                  <p>芸工生が製作した作品を展示しています。隅々までご覧下さい</p>
-                  <p class="text-accent"><span class="text-orange">※作品投票のお願い</span><br class="is-sp">優秀作品を決定する人気投票を行っております！ どなたでも、是非投票にご協力ください！
-                  </p>
-                  </p>
-                  <p class="exhabition-thame text-japanese">「Bomb Joule」をテーマに作成します。</p>
+              <div class="ws-container">
+                <img class="ws-main-img" src="images/event/ws2-img-01.png">
+                <div class="ws-text-container right-corner l-right l-relative">
+                  <span class="ws-number ws-number-right text-orange is-pc">work shop 2</span>
+                  <div class="ws-text-block ws-block-right text-left">
+                    <span class="ws-title">理想の部屋を作ろう</span>
+                    <img class="ws2-img" src="images/event/ws2-img-02.png">
+                    <p>
+                      こんな部屋に住みたい…!<br> そんな夢を形にしてみましょう！
+                      <br> 小さな真っ白な模型の部屋を、
+                      <br class="is-pc"> あなた好みの壁紙・家具で
+                      <br class="is-pc"> コーディネートしてください。
+                      <br> 図工が好きな方大歓迎！
+                      <br> 大人も子供も誰でも参加できます。
+                      <br> 完成した模型は持ち帰ることができます。
+                      <br>
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div class="exhabition-container clearfix">
-                  <img class="l-left" src="images/event/img-solo.png">
+              <div class="ws-container">
+                <img class="ws-main-img" src="images/event/ws3-img-01.png">
+                <div class="ws-text-container left-corner l-left l-relative">
+                  <img class="ws3-img" src="images/event/ws3-img-02.png">
+                  <span class="ws-number ws-number-left text-orange is-pc"> work shop 3 </span>
+                  <div class="ws-text-block ws-block-left text-right">
+                    <span class="ws-title">ハンカチを作ろう〜絞り染め〜</span>
+                    <p>
+                      染物体験してみませんか。<br> 今回は２種類の染め方で世界に一枚だけの
+                      <br class="is-pc"> オリジナルハンカチを作ろう！
+                      <br> 子供から大人までどなたでも
+                      <br class="is-pc"> 簡単にできますので
+                      <br class="is-pc"> 気軽にお越しください。
+                      <br> もちろん作ったハンカチは
+                      <br class="is-pc"> 持ち帰ることができますよ。
+                      <br> 芸術の秋。作品作りにお一ついかがですか？
+                      <br>
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-                  <div class="exhabition-img-container">
-                    <p class="exhabition-title">個人作品<br> 魅力的な作品ばかり! </p>
+              <!-- ▲ws -->
+            </main>
+          </section>
+          <section id="panel-booth">
+            <main>
+              <!-- ▼booth-->
+              <div class="booth-title"><span>展示紹介</span></div>
+
+              <div class="exhabition-sentence">
+                <p>芸工生が製作した作品を展示しています。隅々までご覧下さい</p>
+                <p class="text-accent"><span class="text-orange">※作品投票のお願い</span><br class="is-sp">優秀作品を決定する人気投票を行っております！ どなたでも、是非投票にご協力ください！
+                </p>
+                </p>
+                <p class="exhabition-thame text-japanese">「Bomb Joule」をテーマに作成します。</p>
+              </div>
+
+              <div class="exhabition-container clearfix">
+                <img class="l-left" src="images/event/img-solo.png">
+
+                <div class="exhabition-img-container">
+                  <p class="exhabition-title">個人作品<br> 魅力的な作品ばかり! </p>
+
+                  <div class="img-block l-img-01">
+                    <img src="images/event/photo-solo01.png">
+                    <p>クラフト作品</p>
+                  </div>
+                  <div class="img-block l-img-02">
+                    <p>服デザイン</p>
+                    <img src="images/event/photo-solo02.png">
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="exhabition-container clearfix uni">
+                <img class="l-left" src="images/event/img-uni.png">
+
+                <div class="exhabition-img-container">
+                  <p class="exhabition-title">団体作品<br>グループ作品ならではの大作！
 
                     <div class="img-block l-img-01">
-                      <img src="images/event/photo-solo01.png">
-                      <p>クラフト作品</p>
+                      <img src="images/event/photo-uni01.png">
+                      <p>カーデザイン</p>
                     </div>
                     <div class="img-block l-img-02">
-                      <p>服デザイン</p>
-                      <img src="images/event/photo-solo02.png">
+                      <p>時計デザイン</p>
+                      <img src="images/event/photo-uni02.png">
                     </div>
+                </div>
+              </div>
 
+              <div class="exhabition-container clearfix work">
+                <img class="l-left" src="images/event/img-work.png">
+
+                <div class="exhabition-img-container">
+                  <p class="exhabition-title">実習課題の優秀作品を中心に展示しています。<br> 普段の芸工生の学びの現場をこの機会にぜひご覧下さい！
+                  </p>
+
+                  <div class="img-block l-img-03">
+                    <img src="images/event/photo-work01.png">
+                    <p>グラフィックデザイン基礎</p>
+                  </div>
+                  <div class="img-block l-img-04">
+                    <img src="images/event/photo-work02.png">
+                    <p>スピードシェイプ</p>
                   </div>
                 </div>
+              </div>
 
-                <div class="exhabition-container clearfix uni">
-                  <img class="l-left" src="images/event/img-uni.png">
+              <div class="booth-title border-top"><span>模擬店ブース</span></div>
 
-                  <div class="exhabition-img-container">
-                    <p class="exhabition-title">団体作品<br>グループ作品ならではの大作！
+              <div class="booth">
+                <p class="booth-section">今年も個性豊かな模擬店が勢ぞろい。ぜひお越しください！</p>
 
-                      <div class="img-block l-img-01">
-                        <img src="images/event/photo-uni01.png">
-                        <p>カーデザイン</p>
+                <div class="booth-select">
+                  <input type="radio" id="booth-foods" name="tab" checked>
+                  <label for="booth-foods" class="booth-label-img">
+                    <img src="images/event/logo-food.png">
+                  </label>
+
+                  <input type="radio" id="booth-goods" name="tab">
+                  <label for="booth-goods" class="booth-label-img">
+                    <img src="images/event/logo-goods.png">
+                  </label>
+
+                  <div class="booth-store">
+                    <div id="foods-store" name="foods-store">
+
+                      <div class="sankaku">
+                        <div class="sankaku11"></div>
                       </div>
-                      <div class="img-block l-img-02">
-                        <p>時計デザイン</p>
-                        <img src="images/event/photo-uni02.png">
-                      </div>
-                  </div>
-                </div>
 
-                <div class="exhabition-container clearfix work">
-                  <img class="l-left" src="images/event/img-work.png">
+                      <ul class="clearfix">
+                        <li>
+                          <img src="images/event/icon-food-01.png">
+                          <span>にぎり亭</span>
+                          <p>おにぎりと味噌汁</p>
+                        </li>
 
-                  <div class="exhabition-img-container">
-                    <p class="exhabition-title">実習課題の優秀作品を中心に展示しています。<br> 普段の芸工生の学びの現場をこの機会にぜひご覧下さい！
-                    </p>
+                        <li>
+                          <img src="images/event/icon-food-09.png">
+                          <span>にとりとり亭</span>
+                          <p>ローストビーフの<br>お店です。</p>
+                        </li>
 
-                    <div class="img-block l-img-03">
-                      <img src="images/event/photo-work01.png">
-                      <p>グラフィックデザイン基礎</p>
+                        <li>
+                          <img src="images/event/icon-food-02.png">
+                          <span>しゃぶたけ</span>
+                          <p>ミンナ オイデヨ<br>オイシイヨ</p>
+                        </li>
+
+                        <li>
+                          <img src="images/event/icon-food-10.png">
+                          <span>炭火焼 × チーズ</span>
+                          <p>間違いないです</p>
+                        </li>
+
+                        <li>
+                          <img src="images/event/icon-food-03.png">
+                          <span>#wawawaffle</span>
+                          <p>インスタ映え間違い<br>なしのワッフル！<br>食べに来てね！</p>
+                        </li>
+
+                        <li>
+                          <img src="images/event/icon-food-11.png">
+                          <span>ケバブ屋が<br>やりたかった</span>
+                          <p>でも無理でした</p>
+                        </li>
+
+                        <li>
+                          <img src="images/event/icon-food-04.png">
+                          <span>Bomb Delish</span>
+                          <p>美味しさはじける！<br>ボンデリッシュ！</p>
+                        </li>
+
+                        <li>
+                          <img src="images/event/icon-food-12.png">
+                          <span>賭博黙示録カジ<br>〜串焼き屋さん〜</span>
+                          <p>悪魔的にうまい串焼き。サイコロの出目に応じてサービスします。</p>
+                        </li>
+
+                        <li>
+                          <img src="images/event/icon-food-05.png">
+                          <span>お寿司屋さん</span>
+                          <p>インスタ映え間違いなし！</p>
+                        </li>
+
+                        <li>
+                          <img src="images/event/icon-food-13.png">
+                          <span>タムおでん</span>
+                          <p>タムおじさんのお店。今年はおでん。</p>
+                        </li>
+
+                        <li>
+                          <img src="images/event/icon-food-06.png">
+                          <span>ヒッチハイカー</span>
+                          <p>芸工で一番<br>”ありがとう”を集める<br>模擬店になろう</p>
+                        </li>
+
+                        <li>
+                          <img src="images/event/icon-food-14.png">
+                          <span>男前シチュー</span>
+                          <p>つくります。<br>男前なシチュー</p>
+                        </li>
+
+                        <li>
+                          <img src="images/event/icon-food-07.png">
+                          <span>ボンジョビ</span>
+                          <p>お腹をすかして<br>きてください</p>
+                        </li>
+
+                        <li>
+                          <img src="images/event/icon-food-15.png">
+                          <span>ぼん汁</span>
+                          <p>安全第一・表裏一体・天下統一・唯我独尊・森羅万象チョコ</p>
+                        </li>
+
+                        <li>
+                          <img src="images/event/icon-food-08.png">
+                          <span>T's</span>
+                          <p>TakashiとTestuのドリンク屋です</p>
+                        </li>
+
+                        <li>
+                          <img src="images/event/icon-food-16.png">
+                          <span>ボンボヤージュ</span>
+                          <p>美味しいコーヒー<br>美味しいお菓子<br>素敵な雑貨</p>
+                        </li>
+
+
+                      </ul>
                     </div>
-                    <div class="img-block l-img-04">
-                      <img src="images/event/photo-work02.png">
-                      <p>スピードシェイプ</p>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="booth-title border-top"><span>模擬店ブース</span></div>
-
-                <div class="booth">
-                  <p class="booth-section">今年も個性豊かな模擬店が勢ぞろい。ぜひお越しください！</p>
-
-                  <div class="booth-select">
-                    <input type="radio" id="booth-foods" name="tab" checked>
-                    <label for="booth-foods" class="booth-label-img">
-                      <img src="images/event/logo-food.png">
-                    </label>
-
-                    <input type="radio" id="booth-goods" name="tab">
-                    <label for="booth-goods" class="booth-label-img">
-                      <img src="images/event/logo-goods.png">
-                    </label>
-
-                    <div class="booth-store">
-                      <div id="foods-store" name="foods-store">
-
-                        <div class="sankaku">
-                          <div class="sankaku11"></div>
-                        </div>
-
-                        <ul class="clearfix">
-                          <li>
-                            <img src="images/event/icon-food-01.png">
-                            <span>にぎり亭</span>
-                            <p>おにぎりと味噌汁</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-food-09.png">
-                            <span>にとりとり亭</span>
-                            <p>ローストビーフの<br>お店です。</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-food-02.png">
-                            <span>しゃぶたけ</span>
-                            <p>ミンナ オイデヨ<br>オイシイヨ</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-food-10.png">
-                            <span>炭火焼 × チーズ</span>
-                            <p>間違いないです</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-food-03.png">
-                            <span>#wawawaffle</span>
-                            <p>インスタ映え間違い<br>なしのワッフル！<br>食べに来てね！</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-food-11.png">
-                            <span>ケバブ屋が<br>やりたかった</span>
-                            <p>でも無理でした</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-food-04.png">
-                            <span>Bomb Delish</span>
-                            <p>美味しさはじける！<br>ボンデリッシュ！</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-food-12.png">
-                            <span>賭博黙示録カジ<br>〜串焼き屋さん〜</span>
-                            <p>悪魔的にうまい串焼き。サイコロの出目に応じてサービスします。</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-food-05.png">
-                            <span>お寿司屋さん</span>
-                            <p>インスタ映え間違いなし！</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-food-13.png">
-                            <span>タムおでん</span>
-                            <p>タムおじさんのお店。今年はおでん。</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-food-06.png">
-                            <span>ヒッチハイカー</span>
-                            <p>芸工で一番<br>”ありがとう”を集める<br>模擬店になろう</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-food-14.png">
-                            <span>男前シチュー</span>
-                            <p>つくります。<br>男前なシチュー</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-food-07.png">
-                            <span>ボンジョビ</span>
-                            <p>お腹をすかして<br>きてください</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-food-15.png">
-                            <span>ぼん汁</span>
-                            <p>安全第一・表裏一体・天下統一・唯我独尊・森羅万象チョコ</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-food-08.png">
-                            <span>T's</span>
-                            <p>TakashiとTestuのドリンク屋です</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-food-16.png">
-                            <span>ボンボヤージュ</span>
-                            <p>美味しいコーヒー<br>美味しいお菓子<br>素敵な雑貨</p>
-                          </li>
-
-
-                        </ul>
+                    <div id="goods-store">
+                      <div class="sankaku">
+                        <div class="sankaku11"></div>
                       </div>
+                      <ul class="clearfix">
+                        <li>
+                          <img src="images/event/icon-goods-01.png">
+                          <span>グラフィック部署</span>
+                          <p>芸工祭2017オリジナルグッズを販売！<br>ここでしか買えないものばかりです。</p>
+                        </li>
 
-                      <div id="goods-store">
-                        <div class="sankaku">
-                          <div class="sankaku11"></div>
-                        </div>
-                        <ul class="clearfix">
-                          <li>
-                            <img src="images/event/icon-goods-01.png">
-                            <span>グラフィック部署</span>
-                            <p>芸工祭2017オリジナルグッズを販売！<br>ここでしか買えないものばかりです。</p>
-                          </li>
+                        <li>
+                          <img src="images/event/icon-goods-02.png">
+                          <span>ざっかやさん</span>
+                          <p>アクセサリーや小物など、<br>かわいい手作り雑貨を売ります！</p>
+                        </li>
 
-                          <li>
-                            <img src="images/event/icon-goods-02.png">
-                            <span>ざっかやさん</span>
-                            <p>アクセサリーや小物など、<br>かわいい手作り雑貨を売ります！</p>
-                          </li>
+                        <li>
+                          <img src="images/event/icon-goods-03.png">
+                          <span>ぺぺろんのーず with M</span>
+                          <p>メンバーが手作りグッズを<br>販売するよ！</p>
+                        </li>
 
-                          <li>
-                            <img src="images/event/icon-goods-03.png">
-                            <span>ぺぺろんのーず with M</span>
-                            <p>メンバーが手作りグッズを<br>販売するよ！</p>
-                          </li>
-
-                          <li>
-                            <img src="images/event/icon-goods-04.png">
-                            <span>ボンボヤージュ</span>
-                            <p>美味しいコーヒー<br>美味しいお菓子<br></p>
-                          </li>
-                        </ul>
-                      </div>
+                        <li>
+                          <img src="images/event/icon-goods-04.png">
+                          <span>ボンボヤージュ</span>
+                          <p>美味しいコーヒー<br>美味しいお菓子<br></p>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
+              </div>
 
 
-                <!-- ▲booth -->
-              </main>
-            </section>
-          </div>
+              <!-- ▲booth -->
+            </main>
+          </section>
         </div>
       </div>
-    </main>
-    <!-- ▲ main -->
+    </div>
+  </main>
+  <!-- ▲ main -->
 
-    <!-- ▼ footer -->
-    <footer class='footer'>
-      <span class='copy-right'>©GEIKOSAI 2017</span>
-      <ul class='sns-container is-pc'>
-        <li><a href="#"><img src='images/common/logo-insta.png'></a></li>
-        <li><a href="#"><img src='images/common/logo-twitter.png'></a></li>
-        <li><a href="#"><img src='images/common/logo-fb.png'></a></li>
-      </ul>
-    </footer>
-    <!-- ▲ footer -->
-  </div>
+  <!-- ▼ footer -->
+  <footer class='footer'>
+    <span class='copy-right'>©GEIKOSAI 2017</span>
+    <ul class='sns-container is-pc'>
+      <li><a href="#"><img src='images/common/logo-insta.png'></a></li>
+      <li><a href="#"><img src='images/common/logo-twitter.png'></a></li>
+      <li><a href="#"><img src='images/common/logo-fb.png'></a></li>
+    </ul>
+  </footer>
+  <!-- ▲ footer -->
 </body>
 
 </html>
