@@ -257,6 +257,11 @@ body:after {
   overflow-y: hidden;
 }
 
+.non-all-scroll {
+  overflow-y: hidden;
+}
+
+
 .main-container {
   margin: 120px 0;
   width: 100%;
@@ -288,7 +293,9 @@ body:after {
   left: 4%;
 }
 
-.logo-container img {
+.logo-container img,
+.logo-container a {
+  display: block;
   width: 100%;
 }
 
@@ -551,6 +558,11 @@ h1 img {
   height: 72px;
 }
 
+h2 {
+  margin-top: -100px;/*headerの高さが100pxの場合*/
+  padding-top: 100px;
+}
+
 h2 img {
   display: block;
   margin: 10px auto 24px;
@@ -623,5 +635,10 @@ h2 img {
   h2 > img {
     width: auto;
     height: 10vw;
+  }
+
+  h2 {
+    margin-top: -20px;/*headerの高さが100pxの場合*/
+    padding-top: 20px;
   }
 }

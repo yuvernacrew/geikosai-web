@@ -6,84 +6,85 @@
   <title>芸工祭2017</title>
   <link rel='stylesheet' type='text/css' href='css/ress.min.css'>
   <link rel='stylesheet' type='text/css' href='css/default.css'>
-  <link rel='stylesheet' type='text/css' href='css/style.css'>
+  <link rel='stylesheet' type='text/css' href='css/top.css'>
+  <link rel='stylesheet' type='text/css' href='css/popcorn.css'>
 
   <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+  <script type="text/javascript" src="js/popcorn.js"></script>
 </head>
 
-<body>
-  <div class='body-container'>
-    <!-- ▼ header -->
-    <header class='header'>
-      <div class='logo-container'>
-        <img src='images/common/logo-title.png'>
-      </div>
-      <nav class='nav'>
-        <ul class='drop-menu'>
-          <li class='drop-menu-item'>
-            <a href='#'>ABOUT<img src='images/common/nav-icon.png'></a>
-            <ul class='sub-menu'>
-              <li><a href='#'>theme</a></li>
-              <li><a href='#'>access</a></li>
-              <li><a href='#'>sns</a></li>
-            </ul>
-          </li>
-          <li class='drop-menu-item'>
-            <a href='#'>EVENT<img src='images/common/nav-icon.png'></a>
-            <ul class='sub-menu'>
-              <li><a href='#'>stage</a></li>
-              <li><a href='#'>cafe</a></li>
-              <li><a href='#'>workshop</a></li>
-              <li><a href='#'>booth</a></li>
-            </ul>
-          </li>
-          <li class='drop-menu-item'>
-            <a href='#'>SPONSER<img src='images/common/nav-icon.png'></a>
-          </li>
-
-          <li class='drop-menu-item'>
-            <a href='#'>CM<img src='images/common/nav-icon.png'></a>
-            <ul class='sub-menu'>
-              <li><a href='#'>movie</a></li>
-              <li><a href='#'>graphic</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- ▲ header -->
-
+<body class="bg-telop">
     <!-- ▼ main -->
     <main class='main-container'>
       <div class='wrapper'>
         <!-- ▼ ここから書いていきましょう！ -->
-
-        <h1><img src="images/about/h1-about.png"></h1>
-
-        <ul class='sub-nav flexbox sp-between three-column'>
-          <li>theme</li>
-          <li>access</li>
-          <li>sns</li>
-        </ul>
-
-        <h2><img src="images/about/h2-access.png"></h2>
-
-
+        <div class="top-container">
+          <div class='mv-container'>
+            <img src='images/top/mv_02.png' alt="Bomb Joule">
+            <img src='images/top/mv_02.png' alt="Bomb Joule">
+            <img src='images/top/mv_02.png' alt="Bomb Joule">
+            <img src='images/top/mv_02.png' alt="Bomb Joule">
+          </div>
+          <div class="popcorn-container">
+            <div class="move">
+              <div class="scale">
+                <div class="rotate">
+                  <div class="popcorn"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class='top-nav'>
+          <ul class="top-menu">
+            <li class="top-menu-item top-menu-about">
+              <a href="about.html" class="top-menu-about-main">
+                <img src="images/top/about.png">
+                <img src="images/top/about_hover.png">
+                <img src="images/top/popcorns_about.png">
+              </a>
+              <ul class='top-menu-hover-item top-menu-about-hover-item'>
+                <li><a href='about.html#sns'><img src="images/top/about_sns.png" ></a></li>
+                <li><a href='about.html#access'><img src="images/top/about_access.png" ></a></li>
+                <li><a href='about.html#theme'><img src="images/top/about_thema.png"></a></li>
+              </ul>
+            </li>
+            <li class="top-menu-item top-menu-event">
+              <a href="event.html" class="top-menu-event-main">
+                <img src="images/top/event.png" alt="EVENT">
+                <img src="images/top/event_hover.png" alt="EVENT">
+                <img src="images/top/popcorns_event.png">
+              </a>
+              <ul class='top-menu-hover-item top-menu-event-hover-item'>
+                <li><a href='event.html#ws'><img src="images/top/event_workshop.png" ></a></li>
+                <li><a href='event.html#stage'><img src="images/top/event_stage.png" ></a></li>
+                <li><a href='event.html#cafe'><img src="images/top/event_cafe.png"></a></li>
+                <li><a href='event.html#booth'><img src="images/top/event_booth.png"></a></li>
+              </ul>
+            </li>
+            <li class="top-menu-item top-menu-cm">
+              <a href="cm.html" class="top-menu-cm-main">
+                <img src="images/top/cm.png" alt="CM">
+                <img src="images/top/cm_hover.png" alt="CM">
+                <img src="images/top/popcorns_cm.png">
+              </a>
+              <ul class='top-menu-hover-item top-menu-cm-hover-item'>
+                <li><a href='cm.html#movie'><img src="images/top/cm_movie.png" ></a></li>
+                <li><a href='cm.html#graphic'><img src="images/top/cm_graphic.png" ></a></li>
+              </ul>
+            </li>
+            <li class="top-menu-item top-menu-sponser">
+              <a href="sponser.html">
+                <img src="images/top/sponser.png" alt="SPONSER">
+                <img src="images/top/sponser_hover.png" alt="SPONSER">
+                <img src="images/top/popcorns_sponser.png">
+              </a>
+            </li>
+          </ul>
+        </nav>
         <!-- ▲ ここまで！ -->
       </div>
     </main>
     <!-- ▲ main -->
-
-    <!-- ▼ footer -->
-    <footer class='footer'>
-      <span class='copy-right'>©GEIKOSAI 2017</span>
-      <ul class='sns-container'>
-        <li><a href="#"><img src='images/common/logo-insta.png'></a></li>
-        <li><a href="#"><img src='images/common/logo-twitter.png'></a></li>
-        <li><a href="#"><img src='images/common/logo-fb.png'></a></li>
-      </ul>
-    </footer>
-    <!-- ▲ footer -->
-  </div>
 </body>
 </html>
