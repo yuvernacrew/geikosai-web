@@ -17,6 +17,25 @@ iframe {
   height: 540px;
 }
 
+.iframe-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.iframe-wrapper:before {
+  content: '';
+  display: block;
+  padding-top: 56.25%; /* 縦横比16:9 */
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100% !important;
+}
+
 .slick-arrow {
   background-color: #f08d24;
   height: 100%;
