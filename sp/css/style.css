@@ -1,0 +1,64 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url('../images/top/sp-background-mv.png'),
+                    url('../images/top/sp-package-img.png');
+  background-size: 72%, 84%;
+  background-position: center 12%, center 145%;
+}
+
+.telop {
+  position: absolute;
+  width: 100%;
+}
+
+.nav-img {
+  position: absolute;
+  z-index: 5;
+}
+
+.nav-img a,
+.nav-img img {
+  display: block;
+  height: 110px;
+  width: auto;
+}
+
+.nav-img.about {
+  left: 5vw;
+  top: 8vh;
+}
+
+.nav-img.event {
+  right: 5vw;
+  top: 18vh;
+}
+
+.nav-img.cm {
+  left: 5vw;
+  top: 28vh;
+}
+
+.nav-img.sponser {
+  right: 5vw;
+  top: 38vh;
+}
+
+
+.package-img {
+  position: absolute;
+  z-index: 1;
+  width: 84%;
+  bottom: -20vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#canvas {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}

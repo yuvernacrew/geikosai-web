@@ -56,6 +56,10 @@ $(function() {
     ]
   });
 
+  $(window).on('resize orientationchange', function() {
+    $('.main-slider').slick('resize');
+  });
+
 
   var slideWrapper = $(".main-slider"),
     iframes = slideWrapper.find('.embed-player'),
