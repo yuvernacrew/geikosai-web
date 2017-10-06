@@ -2,15 +2,27 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-image: url('../images/top/sp-background-mv.png'),
-                    url('../images/top/sp-package-img.png');
-  background-size: 72%, 84%;
-  background-position: center 12%, center 145%;
+  background-image: url('../images/top/sp-package-img.png'),
+                    url('../images/top/sp-background-mv.png');
+  background-size: 84%, 72%;
+  background-position: center 145%, center 12%;
+  overflow: hidden;
 }
 
-.telop {
+.bg-telop {
   position: absolute;
-  width: 100%;
+  width: 1200px;
+  z-index: 0;
+  height: 100%;
+  background-image: url("../images/top/telop.png"), url("../images/top/telop.png");
+  background-repeat: repeat-x, repeat-x;
+  background-size: 30%, 30%;
+  animation: moveBg 5s infinite linear;
+}
+
+@keyframes moveBg{
+    0%    { background-position: 50% 2%, 50% 98%; }
+    100%  { background-position: 7% 2%, 93% 98%; }
 }
 
 .nav-img {

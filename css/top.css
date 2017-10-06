@@ -1,14 +1,21 @@
+body,
+html {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh
+}
 
 /*------------
   bace-container
 ------------*/
 
-body,html {
-  overflow: hidden;
-}
-
-body {
+.body-container {
+  width: 100vw;
   height: 100vh;
+  box-sizing: border-box;
+  border: 10px solid #f08d24;
+  position: fixed;
+  overflow-y: hidden;
 }
 
 .main-container {

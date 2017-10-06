@@ -9,6 +9,11 @@
   src: url(../font/Haettenschweiler.ttf);
 }
 
+@font-face {
+  font-family: 'honoka-fix';
+  src: url(../font/ipaexm.ttf);
+}
+
 ul li {
   list-style: none;
 }
@@ -221,7 +226,7 @@ body:after {
   background: #f08d24;
   position: fixed;
   display: block;
-  z-index: 5;
+  z-index: 100;
 }
 
 html:before {
@@ -563,6 +568,11 @@ h2 {
   padding-top: 100px;
 }
 
+h2.reset-padding {
+  margin-top: -20px;
+  padding-top: 20px;
+}
+
 h2 img {
   display: block;
   margin: 10px auto 24px;
@@ -581,6 +591,11 @@ h2 img {
   border: 1px solid #f08d24;
   padding: 8px 0;
   color: white;
+}
+
+.sub-nav li a {
+  display: block;
+  width: 100%;
 }
 
 .sub-nav li > * {
