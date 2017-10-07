@@ -89,6 +89,9 @@ html {
 .mv-container img:nth-child(2) {
   position: absolute;
   height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   -webkit-animation: flash1 0.7s infinite;
      -moz-animation: flash1 0.7s infinite;
        -o-animation: flash1 0.7s infinite;
@@ -102,6 +105,9 @@ html {
 .mv-container img:nth-child(3) {
   position: absolute;
   height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   -webkit-animation: flash2 0.9s infinite;
      -moz-animation: flash2 0.9s infinite;
        -o-animation: flash2 0.9s infinite;
@@ -115,6 +121,9 @@ html {
 .mv-container img:nth-child(4) {
   position: absolute;
   height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   -webkit-animation: flash3 0.5s infinite;
      -moz-animation: flash3 0.5s infinite;
        -o-animation: flash3 0.5s infinite;
