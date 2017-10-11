@@ -163,7 +163,7 @@ html {
 	margin: 0 8%;
 }
 
-.top-menu-sponser {
+.top-menu-sponsor {
 	margin-left: 5%;
 }
 
@@ -444,15 +444,15 @@ html {
 }
 
 /*------------
-  menu-sponser-hover
+  menu-sponsor-hover
 ------------*/
 
-.top-menu-sponser a img:nth-child(1){
+.top-menu-sponsor a img:nth-child(1){
 	position: relative;
 	z-index: 2;
 }
 
-.top-menu-sponser a img:nth-child(2){
+.top-menu-sponsor a img:nth-child(2){
 	height: 48vh;
 	position: absolute;
 	bottom: 0;
@@ -461,32 +461,32 @@ html {
 	z-index: 2;
 }
 
-.top-menu-sponser a img:nth-child(3){
+.top-menu-sponsor a img:nth-child(3){
 	height: 9vh;
 	position: absolute;
 	top: -19%;
 	right: 6%;
 	z-index: 1;
-	-webkit-animation: popcorns-sponser 5s linear,
+	-webkit-animation: popcorns-sponsor 5s linear,
 	shake 0.2s ease 3s infinite normal;
-	   -moz-animation: popcorns-sponser 5s linear,
+	   -moz-animation: popcorns-sponsor 5s linear,
 	shake 0.2s ease 3s infinite normal;
-	     -o-animation: popcorns-sponser 5s linear,
+	     -o-animation: popcorns-sponsor 5s linear,
 	shake 0.2s ease 3s infinite normal;
-	        animation: popcorns-sponser 5s linear,
+	        animation: popcorns-sponsor 5s linear,
 	shake 0.2s ease 3s infinite normal;
 }
 
-@keyframes popcorns-sponser{
+@keyframes popcorns-sponsor{
     0%    { top: 15%;}
     60%   { top: 15%;}
     100%  { top: -19%;}
 }
 
-.top-menu-sponser a:hover img:nth-child(1){
+.top-menu-sponsor a:hover img:nth-child(1){
   visibility: hidden;
 }
 
-.top-menu-sponser a:hover img:nth-child(2){
+.top-menu-sponsor a:hover img:nth-child(2){
   display: block;
 }

@@ -69,7 +69,7 @@ $(function(){
   function initMap() {
    // 地図の作成
       var mapLatLng = new google.maps.LatLng({lat: markerData[0]['lat'], lng: markerData[0]['lng']}); // 緯度経度のデータ作成
-     map = new google.maps.Map(document.getElementById('sponser-map'), { // #sampleに地図を埋め込む
+     map = new google.maps.Map(document.getElementById('sponsor-map'), { // #sampleに地図を埋め込む
        center: {
           lat: 35.1816645, // 緯度
           lng: 136.9471074 // 経度
@@ -109,8 +109,8 @@ $(function(){
    ];
    var styledMapOptions = { name: '芸工' }
    var geikoMapType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
-   map.mapTypes.set('sponser-map', geikoMapType);
-   map.setMapTypeId('sponser-map');
+   map.mapTypes.set('sponsor-map', geikoMapType);
+   map.setMapTypeId('sponsor-map');
 
   }
 

@@ -1,9 +1,9 @@
-.sponser-container {
+.sponsor-container {
   display: flex;
   margin-bottom: 24px;
 }
 
-.sponser-container li {
+.sponsor-container li {
   position: relative;
   /*background-color: #fff;*/
   text-align: center;
@@ -13,12 +13,12 @@
   box-sizing: border-box;
 }
 
-.sponser-container li img {
+.sponsor-container li img {
   width: 100%;
   height: 100%;
 }
 
-.sponser-container li:hover {
+.sponsor-container li:hover {
   border: 4px solid #f08d24;
 }
 
@@ -67,23 +67,23 @@
 }
 
 .shop-name {
-  background-image: url("../images/sponser/icon-home.png");
+  background-image: url("../images/sponsor/icon-home.png");
 }
 
 .shop-address {
-  background-image: url("../images/sponser/icon-address.png");
+  background-image: url("../images/sponsor/icon-address.png");
 }
 
 .shop-tell {
-  background-image: url("../images/sponser/icon-tell.png");
+  background-image: url("../images/sponsor/icon-tell.png");
 }
 
 .shop-time {
-  background-image: url("../images/sponser/icon-time.png");
+  background-image: url("../images/sponsor/icon-time.png");
 }
 
 .shop-link {
-  background-image: url("../images/sponser/icon-link.png");
+  background-image: url("../images/sponsor/icon-link.png");
 }
 
 .shop-link a {
@@ -99,10 +99,10 @@
 }
 
 .shop-comment {
-  background-image: url("../images/sponser/icon-comment.png");
+  background-image: url("../images/sponsor/icon-comment.png");
 }
 
-#sponser-map {
+#sponsor-map {
   width: 720px;
   height: 500px;
   margin: 0 auto;
@@ -123,16 +123,16 @@
 }
 
 @media(max-width:780px){
-  .sponser-container li {
+  .sponsor-container li {
     width: 48%;
     height: auto;
   }
 
-  .sponser-container li img {
+  .sponsor-container li img {
     width: 100%;
   }
 
-  #sponser-map {
+  #sponsor-map {
     width: 85vw;
     height: 65vw;
     margin: 0 auto;
