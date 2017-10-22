@@ -57,6 +57,15 @@ body {
   top: 38vh;
 }
 
+.nav-img.ura {
+  top: 80vh;
+  right: 10vw;
+}
+
+.nav-img.ura img,
+.nav-img.ura a {
+  height: 40px !important;
+}
 
 .package-img {
   position: absolute;

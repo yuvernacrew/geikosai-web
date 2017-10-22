@@ -256,7 +256,7 @@ body:before {
 /* 左 */
 body:after {
   width: 10px;
-  height: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
 }
@@ -279,22 +279,6 @@ body:after {
 /*------------
   header
 ------------*/
-
-.header {
-  width : 98%; /* IE8以下とAndroid4.3以下用フォールバック */
-  width : -webkit-calc(100% - 20px);
-  width : calc(100% - 20px);
-  height: 38px;
-  box-sizing: border-box;
-  border-top: 1px solid #f08d24;
-  border-bottom: 1px solid #f08d24;
-  background-color: #082936;
-  position: fixed;
-  top: 40px;
-  left: 10px;
-  z-index: 100;
-}
-
 .logo-container {
   position: fixed;
   top: 18px;
@@ -396,6 +380,24 @@ body:after {
 
 .drop-menu-item:hover .sub-menu li:last-child {
   border-bottom: 1px solid #f08d24;
+}
+
+
+@media(min-width: 780px){
+  .header {
+    width : 98%; /* IE8以下とAndroid4.3以下用フォールバック */
+    width : -webkit-calc(100% - 20px);
+    width : calc(100% - 20px);
+    height: 38px;
+    box-sizing: border-box;
+    border-top: 1px solid #f08d24;
+    border-bottom: 1px solid #f08d24;
+    background-color: #082936;
+    position: fixed;
+    top: 40px;
+    left: 10px;
+    z-index: 100;
+  }
 }
 
 @media(max-width: 780px){
