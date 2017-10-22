@@ -55,6 +55,24 @@
 	        background-size: contain;
 }
 
+.popcorn5 {
+	position: absolute;
+	display: block;
+	width: 13vh;
+	height: 13vh;
+	background: url("../images/top/hanshin-pop.png") no-repeat;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+}
+
+.ura {
+  position: absolute;
+	display: block;
+	width: 13vh;
+	height: 13vh;
+}
+
 .rotate1 {
 	-webkit-transform-origin: 6.5vh 5vh;
 	   -moz-transform-origin: 6.5vh 5vh;

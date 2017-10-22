@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>芸工祭2017</title>
+  <link rel='stylesheet' type='text/css' href='css/ress.min.css'>
+  <link rel='stylesheet' type='text/css' href='css/default.css'>
+  <link rel='stylesheet' type='text/css' href='css/ura.css'>
+
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+  <script src="js/script.js"></script>
+</head>
+  <body class="bg-telop">
+    <main class='main-container ura'>
+      <div class='wrapper'>
+        <h1>さぁ君も俺達と裏側へ行こう</h1>
+        <div class="ura-img-container">
+          <img src='images/ura/hanshin-logo.png'>
+        </div>
+        <h2>裏芸工祭とは？</h2>
+        <div class="hanshin-container clearfix">
+          <img src='images/ura/hanshin.jpg'>
+          <p>
+            数年前に発足した裏の組織で、現在の裏芸工祭長・阪神は3代目にあたる。<br>
+            当初の目的は「上手いこと目立ちたい者達が目立つための組織」であったがいつの間にやら芸工祭の乗っ取りがメインの目的となりつつある。<br>
+            興味が湧いたそこのあなた！裏芸工祭はいつでも新メンバーを歓迎する。<br>
+            是非、我々と、裏側へ行こう！<br><br>
+
+            ただし来年も存在するのは定かではない。
+          </p>
+        </div>
+        <h2>登場人物</h2>
+        <div class="ura-relation-container">
+          <img class="is-pc" src='images/ura/ura-relation.png'>
+          <img class="is-sp" src='images/ura/ura-geiko.jpg'>
+        </div>
+        <h2>活動</h2>
+        <div class="play-area">
+            <iframe src="https://www.youtube.com/embed/wAZo5_HM1mc" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <ul class="sub-nav flexbox sp-between three-column">
+            <li class="thumb" id="1">第一話</li>
+            <li class="thumb" id="2">第二話</li>
+            <li class="none">comming soon...</li>
+        </ul>
+    </main>
+    <script>
+    $(function(){
+        var iframe_src = new Array(
+            'https://www.youtube.com/embed/wAZo5_HM1mc', // 1話
+            'https://www.youtube.com/embed/b1zQa6mertM', //2話
+            'https://www.youtube.com/embed/5lY4m8kasZU?list=PLaniZSICeIAYfm1IYJtup-OLZiNHZ56Nm' //3話
+        );
+        $(".thumb").click(function () {
+            var id = Number($(this).attr("id")) - 1;
+            $(".play-area iframe").removeAttr("src");
+            $(".play-area iframe").attr("src",iframe_src[id]);
+        });
+    });
+    </script>
+  </body>
+</html>
