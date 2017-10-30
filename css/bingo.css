@@ -1,0 +1,46 @@
+.result-box {
+  position: absolute;
+  background-image: url('../images/bingo/bingo-pop.png');
+  width: 56vw;
+  height: 56vw;
+  line-height: 56vw;
+  text-align: center;
+  background-size: contain;
+  left: 22vw;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 36vw;
+  color: #f08d24;
+}
+
+.result01 {
+  margin: 0 auto;
+}
+
+.result01 span {
+  display: inline-block;
+  font-size: 72px;
+  line-height: 90px;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+}
+
+.result01 .bg0 {
+  background-color: #f08d24;
+  color: #082936;
+}
+
+.result01 .bg1 {
+  background-color: #6F6E6F;
+  color: white;
+}
+
+.result01 .bg2 {
+  background-color: #C1C2C2;
+  color: #f08d24;
+}
+
+.wrapper {
+  width: 900px;
+}
